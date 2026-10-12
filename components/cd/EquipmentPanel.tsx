@@ -41,7 +41,7 @@ const Cross = () => (
   <svg viewBox="0 0 24 24" className="h-5 w-5 text-crimson-2/80" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
 );
 
-export function EquipmentPanel({ build, t, sel: selProp, onSelect }: { build: Build; t: Tally; sel?: SlotKey; onSelect?: (k: SlotKey) => void }) {
+export function EquipmentPanel({ build, t, sel: selProp, onSelect, pinCount = 0, onShowOnMap }: { build: Build; t: Tally; sel?: SlotKey; onSelect?: (k: SlotKey) => void; pinCount?: number; onShowOnMap?: () => void }) {
   const [own, setOwn] = useState<SlotKey>("mainWeapon");
   const sel = selProp ?? own;
   const setSel = (k: SlotKey) => { setOwn(k); onSelect?.(k); };
@@ -160,6 +160,14 @@ export function EquipmentPanel({ build, t, sel: selProp, onSelect }: { build: Bu
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/50">Where to get it</p>
                 <p className="mt-1 text-white/80">{it.get}</p>
                 {it.gate && it.gate !== "Open world" && <p className="mt-1 text-brass">Gate: {it.gate}</p>}
+                {onShowOnMap && (pinCount > 0 ? (
+                  <button type="button" onClick={onShowOnMap} className="mt-3 inline-flex items-center gap-2 rounded-full bg-crimson px-4 py-1.5 text-[13px] font-semibold text-white hover:bg-crimson-2">
+                    <svg viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M12 21s-6-5.2-6-10a6 6 0 0 1 12 0c0 4.8-6 10-6 10z" /><circle cx="12" cy="11" r="2" /></svg>
+                    Show on map · {pinCount} {pinCount === 1 ? "pin" : "pins"}
+                  </button>
+                ) : (
+                  <p className="mt-3 text-[13px] text-white/50">No fixed map pin for this item.</p>
+                ))}
               </div>
             </div>
           ) : (
