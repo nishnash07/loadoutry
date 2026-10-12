@@ -149,6 +149,7 @@ export function EquipmentPanel({ build, t, sel: selProp, onSelect, pinCount = 0,
                           <div className="min-w-0 text-sm">
                             <div className="flex flex-wrap items-baseline gap-x-2"><b>{G.name}</b>{G.trigger && <span className="text-white/50">{G.trigger}{G.pool && G.pool !== "none" ? ` · ${G.pool}` : ""}</span>}</div>
                             <p className="text-white/70">{G.effect}</p>
+                            <p className="mt-1 text-[13px] text-white/55"><span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-brass/90">Get it </span>{G.get}{(GEAR_LOCS[g]?.length ?? 0) > 0 && <span className="text-[#8fb7e8]"> · pinned on the map</span>}</p>
                           </div>
                         </li>
                       );
