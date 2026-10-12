@@ -73,7 +73,7 @@ export function PywelMap({ build, sel, onSelect, zoomToSel }: { build: Build; se
                 <g key={i} onClick={() => onSelect(p.key)} onMouseEnter={() => setHover(i)} onMouseLeave={() => setHover(null)} style={{ cursor: "pointer" }} opacity={dim ? 0.4 : 1}>
                   {active && <circle cx={m.px} cy={m.py} r={3.2 * k} fill="none" stroke={KIND[p.loc.kind].color} strokeWidth={0.5 * k} opacity={0.8} />}
                   <circle cx={m.px} cy={m.py} r={(active ? 2 : 1.4) * k} fill={KIND[p.loc.kind].color} stroke="#ffffff" strokeWidth={0.45 * k} />
-                  {(active || hover === i) && (
+                  {((active && zoomToSel) || hover === i) && (
                     <text x={m.px} y={m.py - 3.2 * k} textAnchor="middle" fontSize={2.6 * k} fontWeight={600} fill="#1d1d1f" stroke="#f4f1ea" strokeWidth={0.7 * k} paintOrder="stroke" style={{ fontFamily: "var(--font-sans)" }}>{p.itemName}</text>
                   )}
                 </g>
