@@ -4,6 +4,7 @@ import type { Build, SlotKey, Tally } from "@/lib/cd/builds";
 import { ITEMS } from "@/lib/cd/items";
 import { GEARS } from "@/lib/cd/gears";
 import { cdIcon } from "@/lib/asset";
+import { GEAR_LOCS } from "@/lib/cd/map";
 import { StatBars } from "./StatBars";
 
 /*
