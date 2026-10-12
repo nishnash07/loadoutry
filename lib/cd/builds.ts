@@ -4,7 +4,7 @@ import { critPct, damageIndex } from "./stats";
 
 export type SlotKey =
   | "helm" | "chest" | "gloves" | "boots" | "cloak"
-  | "mainWeapon" | "secondWeapon" | "bow" | "shield"
+  | "mainWeapon" | "secondWeapon" | "subWeapon" | "bow" | "shield"
   | "necklace" | "earringL" | "earringR" | "ringL" | "ringR" | "pack" | "ammo";
 
 export interface Equip { item: string; gears: string[] }
@@ -92,7 +92,7 @@ export const BUILDS: Build[] = [
     role: "Sustained · single target · stamina",
     focus: "Dual wield",
     summary: "The sword pair attacks faster and swaps in when a boss only gives you small windows or blocks big hits. Every Heavy Attack fires Shadow Claw's three swipes and a murder of crows from both swords. Crit comes entirely from the shared core, which is exactly what the Kuku chest and the necklace are for.",
-    equipment: { ...CORE, mainWeapon: { item: "fated-shadow", gears: ["shadow-claw", "crows-pursuit", "destruction-iii"] }, secondWeapon: { item: "aeserion-sword", gears: ["shadow-claw", "crows-pursuit", "destruction-iii"] }, bow: { item: "golden-knotted-ancestral-bow", gears: ["infinite-arrows-ii", "infinite-arrows-iii", "destruction-iii", "destruction-iii", "insight-iii"] }, ammo: { item: "explosive-arrow", gears: [] } },
+    equipment: { ...CORE, mainWeapon: { item: "fated-shadow", gears: ["shadow-claw", "crows-pursuit", "destruction-iii"] }, secondWeapon: { item: "aeserion-sword", gears: ["shadow-claw", "crows-pursuit", "destruction-iii"] }, subWeapon: { item: "vow-of-the-dead-king", gears: ["groundsurge", "greysoul-howling", "shadow-claw", "destruction-iii", "destruction-iii"] }, bow: { item: "golden-knotted-ancestral-bow", gears: ["infinite-arrows-ii", "infinite-arrows-iii", "destruction-iii", "destruction-iii", "insight-iii"] }, ammo: { item: "explosive-arrow", gears: [] } },
     rotation: [
       "Heavy Attack (R2) spam: Shadow Claw + Crow's Pursuit from both blades, plus the Echoing illusion.",
       "Weave Turning Slash when Spirit allows; Momentum still applies and the Watcher drones keep the stagger bar moving.",
@@ -214,7 +214,7 @@ export const BUILDS: Build[] = [
 
 export const build = (slug: string) => BUILDS.find((b) => b.slug === slug);
 
-export interface Tally { attack: number; crit: number; as: number; ms: number; def: number; critPct: number; index: number }
+export interface Tally { attack: number; crit: number; as: number; ms: number; def: number; fire: number; ice: number; lightning: number; critPct: number; index: number }
 
 /** Stat tally for the build's main weapon, applying the game's local/global rules. */
 export function tally(b: Build, weaponKey: "mainWeapon" | "bow" = "mainWeapon"): Tally {
@@ -232,5 +232,6 @@ export function tally(b: Build, weaponKey: "mainWeapon" | "bow" = "mainWeapon"):
   const as = (weaponKey === "bow" ? 0 : (w?.as ?? 0)) + sum([...armor, ...globals].map(it), (x) => x?.as) + sum(armorGears, (g) => g.as);
   const ms = sum(armor.map(it), (x) => x?.ms) + sum(armorGears, (g) => g.ms);
   const def = sum(armor.map(it), (x) => x?.def) + sum(armorGears, (g) => g.def);
-  return { attack, crit, as, ms, def, critPct: critPct(crit), index: damageIndex(attack, crit) };
+  const fire = sum(armor.map(it), (x) => x?.fire), ice = sum(armor.map(it), (x) => x?.ice), lightning = sum(armor.map(it), (x) => x?.lightning);
+  return { attack, crit, as, ms, def, fire, ice, lightning, critPct: critPct(crit), index: damageIndex(attack, crit) };
 }

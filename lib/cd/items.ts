@@ -18,6 +18,8 @@ export interface Item {
   sockets: number; // maximum a Witch can open on this item
   stock?: number; // sockets it ships with
   special?: string;
+  fire?: number; ice?: number; lightning?: number;
+  refine?: number; // refinement level shown; defaults to 10
   get: string;
   gate?: string;
 }
@@ -45,11 +47,11 @@ export const ITEMS: Record<string, Item> = {
     get: "Any 33-attack bow is interchangeable: Noble Man's, Divine Echoes, Aeserion, Crimson Warden's, Shadowleaf, Kylus.", gate: "Varies" },
   "unyielding-heros-plate-helm": { slug: "unyielding-heros-plate-helm", name: "Unyielding Hero's Plate Helm", slot: "helm", def: 17, sockets: 1, stock: 1, special: "Daze Immunity.",
     get: "Back Alley Shop in Calphade (Thrak), about 16.8 silver.", gate: "Patch 1.13 content; may need Cassius Morten defeated" },
-  "leather-helm-of-the-fallen-kingdom": { slug: "leather-helm-of-the-fallen-kingdom", name: "Leather Helm of the Fallen Kingdom", slot: "helm", def: 18, sockets: 1, stock: 1, special: "Lightning Resistance Lv1. Ships with Momentum.",
+  "leather-helm-of-the-fallen-kingdom": { slug: "leather-helm-of-the-fallen-kingdom", name: "Leather Helm of the Fallen Kingdom", slot: "helm", def: 18, lightning: 1, sockets: 1, stock: 1, special: "Lightning Resistance Lv1. Ships with Momentum.",
     get: "Chest in the Sanctum of Benediction, south of the E in Hernand on the map; also sold by Quentin White.", gate: "Open world, early" },
-  "kuku-flame-resistant-armor": { slug: "kuku-flame-resistant-armor", name: "Kuku Flame-Resistant Armor", slot: "chest", def: 38, crit: 3, sockets: 0, special: "Fire Resistance Lv10. Absorbs fire damage; when charged, glows for 10 s and bursts fire on every hit taken. No sockets.",
+  "kuku-flame-resistant-armor": { slug: "kuku-flame-resistant-armor", name: "Kuku Flame-Resistant Armor", slot: "chest", def: 38, crit: 3, fire: 10, sockets: 0, special: "Fire Resistance Lv10. Absorbs fire damage; when charged, glows for 10 s and bursts fire on every hit taken. No sockets.",
     get: "Craft at a Kuku Pot: Enhanced Kuku Pot + Scorchflame Plate Armor + Power Core (Casket of Illusions) + Core of Absolution. Needs the Kuku Gear Special Blueprint.", gate: "Late, Kuku crafting line" },
-  "kuku-ice-resistant-armor": { slug: "kuku-ice-resistant-armor", name: "Kuku Ice-Resistant Armor", slot: "chest", def: 38, ms: 3, sockets: 0, special: "Ice Resistance Lv10. No sockets.",
+  "kuku-ice-resistant-armor": { slug: "kuku-ice-resistant-armor", name: "Kuku Ice-Resistant Armor", slot: "chest", def: 38, ms: 3, ice: 10, sockets: 0, special: "Ice Resistance Lv10. No sockets.",
     get: "Same Kuku Pot recipe family with the Frostcursed plate chest.", gate: "Late, Kuku crafting line" },
   "scorchflame-plate-armor": { slug: "scorchflame-plate-armor", name: "Scorchflame Plate Armor", slot: "chest", def: 36, sockets: 3,
     get: "Twilight Grotto cave behind the Denn River waterfall west of Demeniss; Flame Knights faction rewards.", gate: "Open world" },
@@ -77,12 +79,12 @@ export const ITEMS: Record<string, Item> = {
   "witchs-ring": { slug: "witchs-ring", name: "Witch's Ring", slot: "ring", atk: 3, as: 4, sockets: 0, special: "+6% Stamina regen.",
     get: "Goyen at the Nest of Valor. Mark of Darkness (Windmere Manor puzzle, Demeniss) matches it.", gate: "Chapter 9" },
   "mark-of-darkness": { slug: "mark-of-darkness", name: "Mark of Darkness", slot: "ring", atk: 3, as: 4, sockets: 0, special: "+6% Stamina regen.", get: "Windmere Manor strongbox puzzle, Demeniss.", gate: "Open world" },
-  "pailunese-signet": { slug: "pailunese-signet", name: "Pailunese Signet", slot: "ring", atk: 11, crit: 1, sockets: 0, special: "+2% Stamina regen.", get: "Contribution shop, Pailune.", gate: "Contribution" },
-  "kuku-watcher-pack": { slug: "kuku-watcher-pack", name: "Kuku Watcher Pack", slot: "pack", sockets: 0, special: "Deploys two untargetable Watcher drones that fire for the whole fight and build stagger on their own. No cooldown.",
+  "pailunese-signet": { slug: "pailunese-signet", name: "Pailunese Signet", slot: "ring", atk: 11, crit: 1, refine: 0, sockets: 0, special: "+2% Stamina regen.", get: "Contribution shop, Pailune.", gate: "Contribution" },
+  "kuku-watcher-pack": { slug: "kuku-watcher-pack", name: "Kuku Watcher Pack", slot: "pack", refine: 0, sockets: 0, special: "Deploys two untargetable Watcher drones that fire for the whole fight and build stagger on their own. No cooldown.",
     get: "Blueprint II from Bari, Witch of Kindness, by purifying the Sanctum of Atonement. Craft at Kilnden Workshop: Kuku Pack, Electrical Components, Clockwork Insects, Small Batteries, Abyss Cell No. 0.", gate: "Witch of Kindness line" },
-  "explosive-arrow": { slug: "explosive-arrow", name: "Explosive Arrow", slot: "ammo", sockets: 0, special: "One is enough with 100% Infinite Arrows.",
+  "explosive-arrow": { slug: "explosive-arrow", name: "Explosive Arrow", slot: "ammo", refine: 0, sockets: 0, special: "One is enough with 100% Infinite Arrows.",
     get: "Back Alley vendors in Calphade (Thrak), Demeniss outskirts (Brek) and Tashkalp (Vex); Demeniss Armory dispatch.", gate: "Open world" },
-  "the-ashens-leather-cloak": { slug: "the-ashens-leather-cloak", name: "Any cloak", slot: "cloak", def: 12, sockets: 0, special: "Cloaks carry no sockets. Pick by look; Shadow Swan gives Fire Res 7 for volcanic zones.", get: "Cosmetic choice.", gate: "Open world" },
+  "the-ashens-leather-cloak": { slug: "the-ashens-leather-cloak", name: "Any cloak", slot: "cloak", def: 12, ice: 3, sockets: 0, special: "Cloaks carry no sockets. Pick by look; Shadow Swan gives Fire Res 7 for volcanic zones.", get: "Cosmetic choice.", gate: "Open world" },
 };
 
 export const item = (slug: string): Item => {
