@@ -21,7 +21,7 @@ export const GEARS: Record<string, Gear> = {
     get: "Ships in Fated Shadow (Goyen, Nest of Valor, Chapter 9). Craft: Destruction I + Swift I + Haste I + Insight I." },
   "shadow-claw": { slug: "shadow-claw", name: "Shadow Claw", kind: "skill", trigger: "Heavy Attack / Forward Slash", pool: "Stamina",
     effect: "Three forward swipes, Black Fang's own move. Strong single-target damage.",
-    get: "Reward of the faction quest Legendary Wolf (Howls from the North Gate). Craft: Destruction I + Swift I + Haste I + Vitality I." },
+    get: "Reward of the faction quest Legendary Wolf (Howls from the North Gate). To craft one instead you must first read Gear Blueprint: Shadow Claw (a 2% drop from Exploration Dispatch missions at the Timeworn Ruins or Kingshield Dig Site); the recipe then appears at any Witch's Altar under Craft Abyss Gear and consumes Destruction I + Swift I + Haste I + Vitality I." },
   "crows-pursuit": { slug: "crows-pursuit", name: "Crow's Pursuit", kind: "skill", trigger: "Heavy Attack", pool: "Stamina",
     effect: "A murder of crows homes onto nearby enemies. Average damage, reliable stagger, extra reach.",
     get: "Ships in the Tauria Curved Sword (Crowcaller, Chapter 5). Craft: Destruction I + Haste I + Ascent I + Fortitude I." },

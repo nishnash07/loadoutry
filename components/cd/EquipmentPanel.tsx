@@ -140,6 +140,7 @@ export function EquipmentPanel({ build, t, sel: selProp, onSelect, pinCount = 0,
               {it.sockets > 0 && (
                 <div className="mt-4">
                   <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-white/50">Abyss gear sockets · {eq.gears.length}/{it.sockets}{it.stock != null && it.stock < it.sockets ? ` (ships with ${it.stock}, a Witch opens the rest)` : ""}</p>
+                  <p className="mt-1 text-[12px] leading-relaxed text-white/45">Recipes below are crafted at any Witch&apos;s Altar under Craft Abyss Gear, and only after you have read that gear&apos;s Gear Blueprint from your inventory. The listed Tier I gears are the ingredients and are consumed.</p>
                   <ul className="mt-2 grid gap-2">
                     {eq.gears.map((g, i) => {
                       const G = GEARS[g];
