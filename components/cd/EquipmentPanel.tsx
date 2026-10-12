@@ -41,8 +41,10 @@ const Cross = () => (
   <svg viewBox="0 0 24 24" className="h-5 w-5 text-crimson-2/80" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" /></svg>
 );
 
-export function EquipmentPanel({ build, t }: { build: Build; t: Tally }) {
-  const [sel, setSel] = useState<SlotKey>("mainWeapon");
+export function EquipmentPanel({ build, t, sel: selProp, onSelect }: { build: Build; t: Tally; sel?: SlotKey; onSelect?: (k: SlotKey) => void }) {
+  const [own, setOwn] = useState<SlotKey>("mainWeapon");
+  const sel = selProp ?? own;
+  const setSel = (k: SlotKey) => { setOwn(k); onSelect?.(k); };
   const eq = build.equipment[sel];
   const it = eq ? ITEMS[eq.item] : undefined;
   const ammo = build.equipment.ammo ? ITEMS[build.equipment.ammo.item] : undefined;

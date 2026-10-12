@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { BUILDS, build, tally } from "@/lib/cd/builds";
-import { EquipmentPanel } from "@/components/cd/EquipmentPanel";
+import { BuildWorkbench } from "@/components/cd/BuildWorkbench";
 
 export function generateStaticParams() {
   return BUILDS.map((b) => ({ slug: b.slug }));
@@ -25,7 +25,7 @@ export default async function BuildPage({ params }: { params: Promise<{ slug: st
       <p className="mt-4 max-w-3xl text-xl text-ink-2 leading-snug">{b.tagline}</p>
 
       <div className="mt-10">
-        <EquipmentPanel build={b} t={t} />
+        <BuildWorkbench build={b} t={t} />
       </div>
 
       <section className="mt-16 grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
