@@ -27,10 +27,10 @@ function Bars({ n }: { n: number }) {
   if (!n) return null;
   const cols = Math.ceil(n / 5);
   return (
-    <div className="absolute left-1.5 top-1.5 flex gap-[3px]" aria-label={`+${n} refinement`}>
+    <div className="absolute left-1.5 top-1.5 flex gap-[2px]" aria-label={`+${n} refinement`}>
       {Array.from({ length: cols }).map((_, c) => (
-        <div key={c} className="flex flex-col gap-[2px]">
-          {Array.from({ length: Math.min(5, n - c * 5) }).map((_, i) => <span key={i} className="block h-[3px] w-[9px] rounded-[1px] bg-brass shadow-[0_0_2px_rgba(212,165,60,.8)]" />)}
+        <div key={c} className="flex flex-col gap-[1px]">
+          {Array.from({ length: Math.min(5, n - c * 5) }).map((_, i) => <span key={i} className="block h-[2px] w-[6px] rounded-[1px] bg-brass/90" />)}
         </div>
       ))}
     </div>
@@ -64,13 +64,13 @@ export function EquipmentPanel({ build, t }: { build: Build; t: Tally }) {
             </div>
             {c.key === "bow" && ammo && <span className="game-serif absolute bottom-1 right-1.5 text-base leading-none text-white drop-shadow">∞</span>}
             {item.sockets > 0 && c.big && (
-              <div className="absolute bottom-[6%] left-1/2 flex -translate-x-1/2 gap-[2px]">
+              <div className="absolute bottom-[3%] left-1/2 flex -translate-x-1/2 -space-x-[3px]">
                 {Array.from({ length: item.sockets }).map((_, i) => {
                   const g = e!.gears[i];
                   return g ? (
-                    <img key={i} src={cdIcon(g)} alt="" className={`h-[18px] w-[18px] rounded-full bg-black ring-1 ${GEARS[g].kind === "skill" ? "ring-crimson-2" : "ring-brass"}`} />
+                    <img key={i} src={cdIcon(g)} alt="" className={`h-[15px] w-[15px] rounded-full bg-black ring-1 ${GEARS[g].kind === "skill" ? "ring-crimson-2" : "ring-brass"}`} />
                   ) : (
-                    <span key={i} className="block h-[18px] w-[18px] rounded-full bg-black/60 ring-1 ring-white/20" />
+                    <span key={i} className="block h-[15px] w-[15px] rounded-full bg-black/70 ring-1 ring-white/25" />
                   );
                 })}
               </div>

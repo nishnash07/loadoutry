@@ -39,3 +39,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# session scratch
+yt/
+kliff-build-codex.html
+.tmp/
