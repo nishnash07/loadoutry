@@ -13,6 +13,8 @@ export const WEAPON_STRENGTH: Record<string, { min: number; max: number }> = {
   Pistol: { min: 920, max: 1080 }, Warhorn: { min: 855, max: 945 }, Dagger: { min: 970, max: 1030 }, Scepter: { min: 940, max: 1060 },
   Sword: { min: 950, max: 1050 }, Focus: { min: 873, max: 927 }, Staff: { min: 1034, max: 1166 }, Hammer: { min: 1034, max: 1166 },
   Utility: { min: 690.5, max: 690.5 }, // utility and elite skills use a fixed 690.5 strength
+  Unequipped: { min: 656, max: 725 }, // shatters and other non-weapon profession skills (wiki "Weapon strength")
+  "Illusionary Warlock": { min: 2705, max: 3050 }, "Illusionary Duelist": { min: 2406, max: 2825 }, // phantasm strengths, wiki "Phantasm"
 };
 export const weaponStrength = (w: string) => { const r = WEAPON_STRENGTH[w]; return (r.min + r.max) / 2; };
 
@@ -43,8 +45,10 @@ export const TICK = {
   bleeding: (cd: number) => 0.06 * cd + 22,
   poison: (cd: number) => 0.06 * cd + 33.5,
   torment: (cd: number) => 0.09 * cd + 31.8, // stationary target (golem)
-  confusion: (cd: number) => 0.195 * cd + 95.5, // on skill use; passive tick is 10
+  confusion: (cd: number) => 0.05 * cd + 18.25, // passive tick per stack per second (PvE); the golem never activates skills
 };
+/** Confusion's extra hit each time the target activates a skill (PvE, level 80). Not counted on the golem. */
+export const CONFUSION_ON_ACTIVATION = (cd: number) => 0.0325 * cd + 16.24;
 export type Condition = keyof typeof TICK;
 
 /** Strike damage of one hit against the golem. */

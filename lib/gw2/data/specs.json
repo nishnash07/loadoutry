@@ -67,5 +67,80 @@
 2090,
 2138
 ]
+},
+"1": {
+"id": 1,
+"name": "Dueling",
+"profession": "Mesmer",
+"elite": false,
+"minor_traits": [
+706,
+710,
+707
+],
+"major_traits": [
+701,
+705,
+700,
+1889,
+1960,
+708,
+692,
+1950,
+704
+],
+"icon": "https://render.guildwars2.com/file/43C5400906A104C60F30DFE0A145D1E767353573/1012003.png",
+"background": "https://render.guildwars2.com/file/992D53319C5FCD4AE841C592DC2AE91D5906AECF/1012057.png"
+},
+"24": {
+"id": 24,
+"name": "Illusions",
+"profession": "Mesmer",
+"elite": false,
+"minor_traits": [
+734,
+723,
+731
+],
+"major_traits": [
+721,
+1869,
+691,
+722,
+729,
+1690,
+733,
+2035,
+753
+],
+"icon": "https://render.guildwars2.com/file/A6D57C63D9EFB3FE75C9DAF8CBE603D8F45A635F/1012005.png",
+"background": "https://render.guildwars2.com/file/B00D98B31B13416811B8484FC146C49B1E055BAC/1012061.png"
+},
+"40": {
+"id": 40,
+"name": "Chronomancer",
+"profession": "Mesmer",
+"elite": true,
+"minor_traits": [
+2030,
+1927,
+1859
+],
+"major_traits": [
+1838,
+1995,
+1987,
+2009,
+1913,
+1978,
+1942,
+2022,
+1890
+],
+"weapon_trait": 1910,
+"icon": "https://render.guildwars2.com/file/D9C960059A69F4DB6604DAD6AF06D0F940E76754/1012001.png",
+"background": "https://render.guildwars2.com/file/9D9F0DA395FDB21423981FAC2CABC850CF7E0A62/1012053.png",
+"profession_icon_big": "https://render.guildwars2.com/file/4C919A74282939EC004333292A93A4073CCDFFFD/1128568.png",
+"profession_icon": "https://render.guildwars2.com/file/B0A3C5B4097705AE21E9CB78E53045E327F1C7C9/1128569.png"
 }
 }

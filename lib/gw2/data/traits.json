@@ -1230,5 +1230,1885 @@
 "duration": 1
 }
 ]
+},
+"691": {
+"id": 691,
+"tier": 1,
+"order": 2,
+"name": "The Pledge",
+"description": "Flame bursts from torch skills inflict additional burning.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 3,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 2
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/20D83E25D6A9D930AA01EB0D3ABAEAD6577B0762/1012512.png"
+},
+"692": {
+"id": 692,
+"tier": 3,
+"order": 0,
+"name": "Superiority Complex",
+"description": "Your critical hits deal more damage. Critical hit damage against disabled foes, or foes below the health threshold, is further increased.<br><c=@reminder>Disabled foes are affected by stun, daze, knockback, pull, knockdown, sink, float, fear, taunt, or launch.",
+"slot": "Major",
+"facts": [
+{
+"text": "Critical Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png",
+"percent": 15
+},
+{
+"text": "Bonus Critical Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png",
+"percent": 10
+},
+{
+"text": "Health Threshold",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 50
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/AAD25BD0F7753D5B447E9654A4AE6A35057B2932/1012504.png"
+},
+"700": {
+"id": 700,
+"tier": 1,
+"order": 2,
+"name": "Duelist's Discipline",
+"description": "Interrupting a foe recharges pistol skills.<br><c=@reminder>This trait can only reduce recharge on enemies with defiance bars once per interval.</c>",
+"slot": "Major",
+"facts": [
+{
+"text": "Percent Recharged on Interrupt",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 25
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 3
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/154231A3A76B322079386C6404702A6FB2179192/1012500.png"
+},
+"701": {
+"id": 701,
+"tier": 1,
+"order": 0,
+"name": "Phantasmal Fury",
+"description": "Your phantasms have fury.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 10,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/705378A42A30BE9912BE7D0910057C00CD1CDDF2/1012498.png"
+},
+"704": {
+"id": 704,
+"tier": 3,
+"order": 2,
+"name": "Deceptive Evasion",
+"description": "Create a clone at your current position when you dodge.",
+"slot": "Major",
+"facts": [
+{
+"text": "Combat Only",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/FDF3040EFF90CC6313E75292F47E0A652E1303B6/1012506.png"
+},
+"705": {
+"id": 705,
+"tier": 1,
+"order": 1,
+"name": "Mental Gymnastics",
+"description": "When you successfully evade an attack, gain vigor.",
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 5
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+"duration": 5,
+"status": "Vigor",
+"description": "Endurance regeneration increased by 50%; stacks duration.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/AF760803BEBE1399784F02A05B4346F418AC66F3/1012499.png"
+},
+"706": {
+"id": 706,
+"tier": 1,
+"order": 0,
+"name": "Critical Infusion",
+"description": "Gain vigor when delivering a critical hit.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 10
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+"duration": 5,
+"status": "Vigor",
+"description": "Endurance regeneration increased by 50%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+"duration": 3,
+"status": "Vigor",
+"description": "Endurance regeneration increased by 50%; stacks duration.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/ADBABE00177C2A79CA7725F2217D2165CB086239/1012507.png"
+},
+"707": {
+"id": 707,
+"tier": 3,
+"order": 0,
+"name": "Master Fencer",
+"description": "Grant fury to yourself and nearby allies when you critically strike an enemy.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 8
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 4,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 8,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/26D50548E5A73BECA0A794A80645E5399C4D0367/1012509.png"
+},
+"708": {
+"id": 708,
+"tier": 2,
+"order": 2,
+"name": "Fencer's Finesse",
+"description": "Gain a stacking ferocity effect when you or one of your illusions strikes with a one-handed sword or an underwater spear. Reduces recharge on sword and underwater spear skills.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4DEE67F2B54D37C8ACEC0F235C94D0C140A77E0F/1012503.png",
+"duration": 6,
+"status": "Fencer's Finesse",
+"description": "Increased ferocity per stack.",
+"apply_count": 1
+},
+{
+"text": "Recharge Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 20
+},
+{
+"text": "Maximum Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 10
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/4DEE67F2B54D37C8ACEC0F235C94D0C140A77E0F/1012503.png"
+},
+"710": {
+"id": 710,
+"tier": 2,
+"order": 0,
+"name": "Sharper Images",
+"description": "Illusions inflict bleeding on critical hits.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 5,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 2,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/F71BE0901F0462F0374B297BCB08426194E51A56/1012508.png"
+},
+"721": {
+"id": 721,
+"tier": 1,
+"order": 0,
+"name": "Shatter Storm",
+"description": "Shatter skill 1 becomes an ammo skill.",
+"slot": "Major",
+"facts": [
+{
+"text": "Additional Charges",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 1
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/D5969DA633174AC5F52AB700F937A524E6E95DDE/1012513.png"
+},
+"722": {
+"id": 722,
+"tier": 2,
+"order": 0,
+"name": "Escape Artist",
+"description": "When a <c=@abilitytype>phantasm</c> is created, grant it distortion.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+"duration": 5,
+"status": "Distortion",
+"description": "Immune to conditions and damage.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+"duration": 2,
+"status": "Distortion",
+"description": "Immune to conditions and damage.",
+"apply_count": 1
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/2C1BCA6C6F6763E90D0226BC2FD8DFA8403E9E47/1012510.png"
+},
+"723": {
+"id": 723,
+"tier": 2,
+"order": 0,
+"name": "Compounding Power",
+"description": "Creating an illusion increases your outgoing damage and condition damage for a short duration.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E9BA251055B444E693144A9AF5FD1CF8266BEFA6/1012520.png",
+"duration": 8,
+"status": "Compounding Power",
+"description": "Increased outgoing damage and condition damage per stack.",
+"apply_count": 1
+},
+{
+"text": "Maximum Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 5
+},
+{
+"text": "Maximum Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 5
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/E9BA251055B444E693144A9AF5FD1CF8266BEFA6/1012520.png"
+},
+"729": {
+"id": 729,
+"tier": 2,
+"order": 1,
+"name": "Phantasmal Haste",
+"description": "<c=@abilitytype>Phantasms</c> spawn with quickness. Gain quickness when you create a phantasm.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 3,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 2,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/EE4D54D0D53E4B57C00F179BD97ED990230736DE/1012514.png"
+},
+"731": {
+"id": 731,
+"tier": 3,
+"order": 0,
+"name": "Master of Misdirection",
+"description": "<c=@abilitytype>Shatter</c> skills gain recharge reduction.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Recharge Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 15
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/A03500F90501130C214507C2A9B4B5CAF7C5219C/1012521.png"
+},
+"733": {
+"id": 733,
+"tier": 3,
+"order": 0,
+"name": "Phantasmal Force",
+"description": "<c=@abilitytype>Phantasms</c> deal increased strike damage for each stack of might you have. Gain might when your phantasms become clones.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E002FB5DEC3A010F03F2E8A7D5000DF778215F6C/1012505.png",
+"duration": 0,
+"status": "Phantasmal Force",
+"description": "Phantasm damage increased per stack.",
+"apply_count": 1
+},
+{
+"text": "Maximum Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 25
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 10,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 6,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/E002FB5DEC3A010F03F2E8A7D5000DF778215F6C/1012505.png"
+},
+"734": {
+"id": 734,
+"tier": 1,
+"order": 0,
+"name": "Cry of Pain",
+"description": "Shatter skill 2 inflicts more stacks of confusion for an increased duration.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Additional Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 33
+}
+],
+"traited_facts": [
+{
+"text": "Additional Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 2,
+"requires_trait": 2386,
+"overrides": 0
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 50,
+"requires_trait": 2386,
+"overrides": 1
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/3AA5FD383BE64BEFDCD1F011E2F526297DAA4868/1012519.png"
+},
+"753": {
+"id": 753,
+"tier": 3,
+"order": 2,
+"name": "Malicious Sorcery",
+"description": "Confusion you inflict has increased duration. When you dodge an attack, inflict confusion on your attacker.",
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 1
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 25
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 4,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 2,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/E1EFE39620B9A00D140A5C493ABB3180E2B2B511/1012518.png"
+},
+"1690": {
+"id": 1690,
+"tier": 2,
+"order": 2,
+"name": "Maim the Disillusioned",
+"description": "<c=@abilitytype>Shatter</c> skills inflict torment on hit.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+"duration": 6,
+"status": "Torment",
+"description": "Deals damage every second. Deals additional damage to foes that aren't moving. Stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/10BABF2708CA3575730AC662A2E72EC292565B08/598887.png",
+"duration": 3,
+"status": "Torment",
+"description": "Deals damage every second. Deals additional damage to foes that aren't moving. Stacks intensity.",
+"apply_count": 1
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/DBC6799E4A18BA9B9ABE280DAE35362DA9DAE00E/1012515.png"
+},
+"1838": {
+"id": 1838,
+"tier": 1,
+"order": 0,
+"name": "Delayed Reactions",
+"description": "Disabling a foe slows them.<br><c=@reminder>Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear.</c><br><c=@reminder>This trait can only affect the same enemy with once per interval.</c>",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png",
+"duration": 3,
+"status": "Slow",
+"description": "Skills and actions are slower.",
+"apply_count": 1
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 3
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/C26CBECA553C29091F1D2C9B05732847E4C3457D/1012475.png"
+},
+"1859": {
+"id": 1859,
+"tier": 3,
+"order": 0,
+"name": "Time Marches On",
+"description": "You move 25% faster. Alacrity applied to you is stronger.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Movement Speed Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"percent": 25
+},
+{
+"text": "Recharge Speed",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 50
+},
+{
+"text": "Recharge Speed",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 33
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/D343AA7E530448F37B20936FCD3163C9BF2CE665/1012485.png"
+},
+"1869": {
+"id": 1869,
+"tier": 1,
+"order": 1,
+"name": "Persistence of Memory",
+"description": "When a <c=@abilitytype>phantasm</c> becomes a clone, it transfers its boons to you.",
+"slot": "Major",
+"facts": [
+{
+"text": "Boons Transferred",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 12
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/F225A021EB41754E4E0C9FCB46F40F7212DA41CE/1012511.png"
+},
+"1889": {
+"id": 1889,
+"tier": 2,
+"order": 0,
+"name": "Blinding Dissipation",
+"description": "Shatter skill 2 inflicts blindness.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/09770136BB76FD0DBE1CC4267DEED54774CB20F6/102837.png",
+"duration": 2,
+"status": "Blinded",
+"description": "Next outgoing attack misses; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/09770136BB76FD0DBE1CC4267DEED54774CB20F6/102837.png",
+"duration": 3,
+"status": "Blinded",
+"description": "Next outgoing attack misses; stacks duration.",
+"apply_count": 1
+}
+],
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 5,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2,
+"requires_trait": 1950
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 3,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2,
+"requires_trait": 1950
+},
+{
+"text": "Blind Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240,
+"requires_trait": 1455
+},
+{
+"text": "Blind Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5,
+"requires_trait": 1455
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/FE37FD6AB5F9F1AF63B89924E0DEF0904757524C/1012501.png"
+},
+"1890": {
+"id": 1890,
+"tier": 3,
+"order": 2,
+"name": "Chronophantasma",
+"description": "The first time a <c=@abilitytype>phantasm</c> would become a clone, it instead resummons itself and attacks again. Resummoned phantasms inflict a percentage of the original's damage.<br><c=@reminder>(Resummoned phantasms are briefly dazed.)</c>",
+"slot": "Major",
+"facts": [
+{
+"text": "Daze",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png",
+"duration": 0
+},
+{
+"text": "Daze",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png",
+"duration": 2
+},
+{
+"text": "Percent",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 105
+},
+{
+"text": "Percent",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 50
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/120E2199010315D0C1FACA9BBFB5DF9E5E47027F/1012481.png"
+},
+"1913": {
+"id": 1913,
+"tier": 2,
+"order": 1,
+"name": "Illusionary Reversion",
+"description": "<c=@abilitytype>Shatter</c> skills generate a clone and grant alacrity if you have enough clones present.",
+"slot": "Major",
+"facts": [
+{
+"text": "Required Clones",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 3,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/4B684BD7490D52689D9CF02D205CB03811D7BA06/1012477.png"
+},
+"1927": {
+"id": 1927,
+"tier": 2,
+"order": 0,
+"name": "Flow of Time",
+"description": "Gain alacrity for each clone you shatter. Gain increased critical-strike chance for you and your illusions when you have alacrity.",
+"slot": "Minor",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 1,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 1,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+},
+{
+"text": "Critical Chance Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png",
+"percent": 15
+},
+{
+"text": "Critical Chance Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png",
+"percent": 10
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/54A00A0D36587A0245BD6400796CF130CE9970D7/1012484.png"
+},
+"1942": {
+"id": 1942,
+"tier": 3,
+"order": 0,
+"name": "Stretched Time",
+"description": "Nearby allies gain boons for each clone you shatter. Grant boons to nearby allies when you summon a <c=@abilitytype>phantasm</c>.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 1,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 3,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4FDAC2113B500104121753EF7E026E45C141E94D/1938787.png",
+"duration": 1,
+"status": "Alacrity",
+"description": "Skills recharge faster.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 6,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 6,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 2
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/1B7FF14574B92E6FFA71D03E3F0FEBE5FD4D2EB2/1012480.png"
+},
+"1950": {
+"id": 1950,
+"tier": 3,
+"order": 1,
+"name": "Ineptitude",
+"description": "Interrupting a foe inflicts blind, and blinding a foe inflicts confusion.<br><c=@reminder>This trait can only activate on enemies with defiance bars once per interval.</c>",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/09770136BB76FD0DBE1CC4267DEED54774CB20F6/102837.png",
+"duration": 5,
+"status": "Blinded",
+"description": "Next outgoing attack misses; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 5,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 2,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 3
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/0214C11C1C217134B2565C5201C70E9A653B2C06/1012516.png"
+},
+"1960": {
+"id": 1960,
+"tier": 2,
+"order": 1,
+"name": "Wandering Mind",
+"description": "Remove a nondamaging condition and gain swiftness whenever you evade an attack.",
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 1
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+"duration": 4,
+"status": "Swiftness",
+"description": "Movement speed increased by 33%; stacks duration.",
+"apply_count": 1
+}
+],
+"specialization": 1,
+"icon": "https://render.guildwars2.com/file/34EDDCE436BD4A20F8F2B7674D24A5A53D56A4B9/1012502.png"
+},
+"1978": {
+"id": 1978,
+"tier": 2,
+"order": 2,
+"name": "Time Bomb",
+"description": "Enemies struck by Time Sink are affixed with a time bomb. Time bombs increase your strike damage dealt to the target and explode when they expire.<br><c=@reminder>Only a certain number of time bombs may be active at once.</c>",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/C9BC67D77E3D959723393BF0EC9B212B53D8362D/1012478.png",
+"duration": 5,
+"status": "Time Bomb",
+"description": "Explodes on expiration.",
+"apply_count": 1
+},
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 10
+},
+{
+"text": "Maximum Active Time Bombs",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 3
+}
+],
+"skills": [
+{
+"name": "Time Bomb",
+"facts": [
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 3
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"description": "Deal damage to nearby enemies with a temporal explosion.",
+"icon": "https://render.guildwars2.com/file/C9BC67D77E3D959723393BF0EC9B212B53D8362D/1012478.png",
+"flags": [],
+"id": 79359,
+"chat_link": "[&Bv81AQA=]"
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/C9BC67D77E3D959723393BF0EC9B212B53D8362D/1012478.png"
+},
+"1987": {
+"id": 1987,
+"tier": 1,
+"order": 2,
+"name": "All's Well That Ends Well",
+"description": "<c=@abilitytype>Wells</c> heal allies when they end.",
+"slot": "Major",
+"facts": [
+{
+"text": "Healing",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 1310,
+"target": "Healing"
+},
+{
+"text": "Number of Allied Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/46D30FCC070170B2F656C3D80005909CD8B0F3F4/1012476.png"
+},
+"1995": {
+"id": 1995,
+"tier": 1,
+"order": 1,
+"name": "Time Catches Up",
+"description": "Activating a <c=@abilitytype>Shatter</c> gives your illusions superspeed. Shatters deal increased damage to movement-impaired foes.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E04392C3D8ED985125973AEB99D8460C483263F9/103458.png",
+"duration": 5,
+"status": "Superspeed",
+"description": "Movement speed is greatly increased. Maximum duration: 10s",
+"apply_count": 1
+},
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 10
+},
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 5
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/3836E04A5BF0E8CCB815A8C1627904AB0CE5EE6A/1012474.png"
+},
+"2009": {
+"id": 2009,
+"tier": 2,
+"order": 0,
+"name": "Danger Time",
+"description": "When you inflict slow, you and your illusions' outgoing critical-strike damage is increased for a duration.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png",
+"duration": 0,
+"status": "Slow",
+"description": "Skills and actions are slower.",
+"apply_count": 1
+},
+{
+"text": "Critical Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png",
+"percent": 5
+},
+{
+"text": "Critical Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/0658D833944E69E62E08EB18A0B5407F722125BC/2229320.png",
+"percent": 10
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E0A1FF012E170754030A0CB6DFDBAED3E81FAB5B/1012479.png",
+"duration": 10,
+"status": "Danger Time",
+"description": "Critical-strike damage is increased for you and your clones.",
+"apply_count": 1
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/E0A1FF012E170754030A0CB6DFDBAED3E81FAB5B/1012479.png"
+},
+"2022": {
+"id": 2022,
+"tier": 3,
+"order": 1,
+"name": "Seize the Moment",
+"description": "You and nearby allies gain quickness for each clone you <c=@abilitytype>shatter</c>. Grant quickness to nearby allies when you summon a <c=@abilitytype>phantasm</c>.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 3,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D4AB6401A6D6917C3D4F230764452BCCE1035B0D/1012835.png",
+"duration": 1,
+"status": "Quickness",
+"description": "Skills and actions are faster.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/0FF56A2B51F9C30CDA540CC41F0A1FA30CED74A0/1012482.png"
+},
+"2030": {
+"id": 2030,
+"tier": 1,
+"order": 0,
+"name": "Time Splitter",
+"description": "Gain access to chronomancer shatter skills and <c=@abilitytype>Wells</c>.",
+"slot": "Minor",
+"skills": [
+{
+"name": "Split Second",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "1 Clone",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.767
+},
+{
+"text": "2 Clones",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 2,
+"dmg_multiplier": 0.613
+},
+{
+"text": "3 Clones",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 3,
+"dmg_multiplier": 0.537
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 1
+}
+],
+"description": "Shatter. Destroy all your clones, damaging nearby foes. Strikes again after a delay.\nShatter traits only affect the first strike of this skill.",
+"icon": "https://render.guildwars2.com/file/14090D7A6472AB06125662EB12E6EC51EDE2EEBB/2175059.png",
+"flags": [],
+"id": 56930,
+"chat_link": "[&BmLeAAA=]",
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 8,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 5,
+"requires_trait": 1687
+},
+{
+"text": "Critical Chance Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png",
+"percent": 25,
+"requires_trait": 2035
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1,
+"requires_trait": 1866
+}
+]
+},
+{
+"name": "Rewinder",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.38
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 3,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Rechage Reduced per Clone",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 3
+}
+],
+"description": "Shatter. Destroy all your clones, confusing nearby foes and recharging this skill for each clone shattered.",
+"icon": "https://render.guildwars2.com/file/F59775A05108441C09AC03C30CAD98CC049CCC28/2175058.png",
+"flags": [],
+"id": 56928,
+"chat_link": "[&BmDeAAA=]",
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+"duration": 8,
+"status": "Vigor",
+"description": "Endurance regeneration increased by 50%; stacks duration.",
+"apply_count": 1,
+"requires_trait": 1687
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/58E92EBAF0DB4DA7C4AC04D9B22BCA5ECF0100DE/102843.png",
+"duration": 5,
+"status": "Vigor",
+"description": "Endurance regeneration increased by 50%; stacks duration.",
+"apply_count": 1,
+"requires_trait": 1687
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/289AA0A4644F0E044DED3D3F39CED958E1DDFF53/102880.png",
+"duration": 4,
+"status": "Confusion",
+"description": "Damage received on skill activation; stacks intensity.",
+"apply_count": 2,
+"requires_trait": 734,
+"overrides": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+"duration": 3,
+"status": "Crippled",
+"description": "Movement speed decreased by 50%; stacks duration.",
+"apply_count": 1,
+"requires_trait": 2035
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1,
+"requires_trait": 1866
+}
+]
+},
+{
+"name": "Time Sink",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 38
+},
+{
+"text": "Daze",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/9AE125E930C92FEA0DD99E7EBAEDE4CF5EC556B6/433474.png",
+"duration": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F60D1EF5271D7B9319610855676D320CD25F01C6/961397.png",
+"duration": 2,
+"status": "Slow",
+"description": "Skills and actions are slower.",
+"apply_count": 1
+}
+],
+"description": "Shatter. Destroy all your clones, dazing and slowing their targets.",
+"icon": "https://render.guildwars2.com/file/3A0CF805A4359A10766D1DD04FF0E7D20A05BD17/2175060.png",
+"flags": [],
+"id": 56873,
+"chat_link": "[&BineAAA=]",
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 10,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1,
+"requires_trait": 1687
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5,
+"requires_trait": 2035,
+"overrides": 4
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1,
+"requires_trait": 1866
+}
+]
+},
+{
+"name": "Distortion",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 50
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+"duration": 1,
+"status": "Distortion",
+"description": "Immune to conditions and damage.",
+"apply_count": 1
+},
+{
+"text": "Prevents Capture-Point Contribution",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+}
+],
+"description": "Shatter. Gain distortion and destroy all your clones, gaining additional distortion for each one shattered.",
+"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+"flags": [],
+"id": 10192,
+"chat_link": "[&BtAnAAA=]",
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+"duration": 10,
+"status": "Regeneration",
+"description": "Gain health every second; stacks duration.",
+"apply_count": 1,
+"requires_trait": 1687
+},
+{
+"text": "Reflects Missiles",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"requires_trait": 2035
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1,
+"requires_trait": 1866
+}
+]
+},
+{
+"name": "Continuum Split",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 105
+},
+{
+"text": "0 Clones",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 2
+},
+{
+"text": "1 Clone",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 3
+},
+{
+"text": "2 Clones",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 5
+},
+{
+"text": "3 Clones",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 6
+},
+{
+"text": "Prevents Capture-Point Contribution",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+}
+],
+"description": "Destroy all your clones and create a rift in the space-time continuum. When it expires, you will revert back to your original point with your previous health, endurance, and skill recharges. Duration increases with each illusion shattered.\nThis skill's recharge cannot be reset by other mesmer skills.",
+"icon": "https://render.guildwars2.com/file/9E7CE10D0E447973F2D9175CF16A103BD076D04B/1012882.png",
+"flags": [],
+"id": 29830,
+"chat_link": "[&BoZ0AAA=]",
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+"duration": 4,
+"status": "Stability",
+"description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+"apply_count": 3,
+"requires_trait": 1687
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1,
+"requires_trait": 1866
+},
+{
+"text": "Duration Increase",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 1,
+"requires_trait": 2035
+}
+]
+},
+{
+"name": "Continuum Shift",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 5000
+}
+],
+"description": "Revert back to the previous timeline. Your health, endurance and cooldowns are reverted to their previous states. You are transported back prematurely if the rift is destroyed.",
+"icon": "https://render.guildwars2.com/file/4BD3BEF1DE31476B3E40002708049EA1026F1F0B/1012895.png",
+"flags": [],
+"id": 30747,
+"chat_link": "[&Bht4AAA=]"
+}
+],
+"specialization": 40,
+"icon": "https://render.guildwars2.com/file/5A9347250FEF7B3431ECE3F6689EDCE20FB96CB6/1012483.png"
+},
+"2035": {
+"id": 2035,
+"tier": 3,
+"order": 1,
+"name": "Master of Fragmentation",
+"description": "Your <c=@abilitytype>Shatter</c> skills are improved.",
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/52619C5D4F9A61C8F37A0705AE36602F19E164C2/103732.png",
+"duration": 0,
+"status": "Mind Wrack",
+"description": "Increases critical-hit chance by 25%.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B8E57C1F08727AF8C39066160B93D175B6A3B9BA/103731.png",
+"duration": 0,
+"status": "Cry of Frustration",
+"description": "Cripples foes on hit.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/0BD64508BF40EFFF3299DFA3D1A63BF2F941A4C9/103769.png",
+"duration": 0,
+"status": "Diversion",
+"description": "Strikes up to five targets within range.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D0969802A76808ACD65A56A6D54F2A40E355F7C3/103284.png",
+"duration": 0,
+"status": "Distortion",
+"description": "Reflects Projectiles",
+"apply_count": 1
+}
+],
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4CAA3750145A55B7E73D5EB9917590EC45657BE7/3680159.png",
+"duration": 0,
+"status": "Lively Lute",
+"description": "Increases critical-hit chance by 25%.",
+"apply_count": 1,
+"requires_trait": 2386,
+"overrides": 0
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/656A0C59523A4D9D935316EA93F1EA6247C32106/2479382.png",
+"duration": 0,
+"status": "Bladesong Harmony",
+"description": "Increases critical-hit chance by 25%.",
+"apply_count": 1,
+"requires_trait": 2216,
+"overrides": 0
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/14090D7A6472AB06125662EB12E6EC51EDE2EEBB/2175059.png",
+"duration": 0,
+"status": "Split Second",
+"description": "Increases critical-hit chance by 25%.",
+"apply_count": 1,
+"requires_trait": 2030,
+"overrides": 0
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/CFE30B5052A2AA67D9A8AE5FC1FBA0A56C64584C/3680160.png",
+"duration": 0,
+"status": "Flustering Flute",
+"description": "Cripples foes on hit.",
+"apply_count": 1,
+"requires_trait": 2386,
+"overrides": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/EF9223543A66B8B5A8FD1C4BC4E7A218277C15C4/2479383.png",
+"duration": 0,
+"status": "Bladesong Sorrow",
+"description": "Cripples foes on hit.",
+"apply_count": 1,
+"requires_trait": 2216,
+"overrides": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F59775A05108441C09AC03C30CAD98CC049CCC28/2175058.png",
+"duration": 0,
+"status": "Rewinder",
+"description": "Cripples foes on hit.",
+"apply_count": 1,
+"requires_trait": 2030,
+"overrides": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E061ECE20A34DC281C0E3EB8FB90094549E87941/3680161.png",
+"duration": 0,
+"status": "Deafening Drum",
+"description": "Weakens foes on hit.",
+"apply_count": 1,
+"requires_trait": 2386,
+"overrides": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/D96E115ADAB14D610215EC185C3C21B4611DC292/2479381.png",
+"duration": 0,
+"status": "Bladesong Dissonance",
+"description": "Strikes up to five targets within range.",
+"apply_count": 1,
+"requires_trait": 2216,
+"overrides": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/3A0CF805A4359A10766D1DD04FF0E7D20A05BD17/2175060.png",
+"duration": 0,
+"status": "Time Sink",
+"description": "Strikes up to five targets within range.",
+"apply_count": 1,
+"requires_trait": 2030,
+"overrides": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/C1BCF465DE1DAB00E00B0F1494ABDB2D7F57BECA/3680162.png",
+"duration": 0,
+"status": "Harmonious Harp",
+"description": "Removes conditions from allies on use.",
+"apply_count": 1,
+"requires_trait": 2386,
+"overrides": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/040192EDDE9D2492D2428027E50DFC12B9044D39/2479384.png",
+"duration": 0,
+"status": "Bladeturn Requiem",
+"description": "Duration increased by 1 second.",
+"apply_count": 1,
+"requires_trait": 2216
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/9E7CE10D0E447973F2D9175CF16A103BD076D04B/1012882.png",
+"duration": 0,
+"status": "Continuum Shift",
+"description": "Base duration increased by 1 second.",
+"apply_count": 1,
+"requires_trait": 2030
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/935C32505D1F4DB7D9739C2C4B4137D4346709A4/3680163.png",
+"duration": 0,
+"status": "Crescendo",
+"description": "Effectiveness per instrument is increased.",
+"apply_count": 1,
+"requires_trait": 2386
+}
+],
+"specialization": 24,
+"icon": "https://render.guildwars2.com/file/E625ADB94CF699763B23A7A82E255B55A44C1B16/1012517.png"
 }
 }

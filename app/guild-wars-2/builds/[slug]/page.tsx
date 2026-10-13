@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { GW2_BUILDS, gw2Build } from "@/lib/gw2/builds";
-import { computeBuild, spec, trait, item } from "@/lib/gw2/model";
+import { computeBuild, spec, trait, item, skill } from "@/lib/gw2/model";
 import { HeroPanel } from "@/components/gw2/HeroPanel";
 import { TraitPanel } from "@/components/gw2/TraitPanel";
 import { SkillBar } from "@/components/gw2/SkillBar";
@@ -14,11 +14,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const b = gw2Build((await params).slug); return { title: b ? `${b.name} · Guild Wars 2` : "Build" };
 }
 
+const attrName = (k: string) => k.replace(/([A-Z])/g, " $1").replace(/^./, (x) => x.toUpperCase());
+
 export default async function Page({ params }: { params: Promise<{ slug: string }> }) {
   const b = gw2Build((await params).slug);
   if (!b) notFound();
   const c = computeBuild(b);
   const s = spec(b.specId);
+  const logTotal = b.log ? b.log.shares.reduce((a, x) => a + x.damage, 0) : 0;
   return (
     <div className="mx-auto max-w-6xl px-5 pt-12 pb-24">
       <Link href="/guild-wars-2/" className="text-[13px] text-ink-2 hover:text-ink">‹ Guild Wars 2</Link>
@@ -36,7 +39,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
           <div key={k} className="card p-4"><dt className="text-[12px] uppercase tracking-[0.1em] text-ink-2">{k}</dt><dd className="mt-1 text-2xl font-semibold">{v}</dd></div>
         ))}
       </dl>
-      <p className="mt-2 text-[12px] text-ink-2">Benchmark from the Snow Crows golem log of {b.benchmark.date}, with 25 might, fury, quickness and alacrity. Difficulty is scored below.</p>
+      <p className="mt-2 text-[12px] text-ink-2">Benchmark from the Snow Crows golem log of {b.benchmark.date}, with 25 might, fury, quickness, alacrity and 25 vulnerability. Difficulty is scored below.</p>
 
       <section className="mt-12 grid gap-6">
         <HeroPanel build={b} c={c} />
@@ -59,17 +62,50 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
 
       <section className="mt-16">
         <h2 className="text-3xl font-semibold">What each skill is worth</h2>
-        <p className="mt-3 max-w-3xl text-ink-2 leading-relaxed">Expected damage of one cast against the heavy raid golem (armor 2597) with 25 might and fury: strike = weapon strength × power × coefficient ÷ armor, crits at {c.critDamage.toFixed(0)}% with {c.boonCritChance.toFixed(1)}% chance; conditions = stacks × duration × tick, with {c.conditionDuration.toFixed(0)}% duration (plus 20% on burning and bleeding from traits). Permanent modifiers are included; Weave Self, Elements of Rage and the relic are not, so these are floor values.</p>
+        <p className="mt-3 max-w-3xl text-ink-2 leading-relaxed">Expected damage of one cast against the heavy raid golem (armor 2597) with 25 might and fury: strike = weapon strength × power × coefficient ÷ armor, crits at {c.critDamage.toFixed(0)}% with {c.boonCritChance.toFixed(1)}% chance; conditions = stacks × duration × tick, with {c.conditionDuration.toFixed(2)}% duration plus any per-condition bonus. {b.damageNote}</p>
         <div className="mt-6"><DamageTable c={c} /></div>
       </section>
+
+      {b.log && (
+        <section className="mt-16">
+          <h2 className="text-3xl font-semibold">From the benchmark log</h2>
+          <p className="mt-3 max-w-3xl text-ink-2 leading-relaxed">Where the damage actually came from in Snow Crows&apos; {b.log.seconds.toFixed(0)}-second golem log ({b.log.dps.toLocaleString()} DPS), and how often each skill was pressed. This is measured, not modelled.</p>
+          <div className="mt-6 grid gap-8 md:grid-cols-2">
+            <ul className="grid gap-2">
+              {b.log.shares.map((sh) => (
+                <li key={sh.label} className="text-[14px]">
+                  <div className="flex justify-between"><span className="font-semibold">{sh.label}</span><span className="num text-ink-2">{(sh.damage / logTotal * 100).toFixed(1)}%</span></div>
+                  <div className="mt-1 h-2 rounded bg-paper-2"><div className="h-full rounded bg-crimson" style={{ width: `${(sh.damage / logTotal) * 100}%` }} /></div>
+                  {sh.note && <div className="text-[12px] text-ink-2">{sh.note}</div>}
+                </li>
+              ))}
+            </ul>
+            <div>
+              <div className="text-[12px] uppercase tracking-[0.1em] text-ink-2">Casts in {b.log.seconds.toFixed(0)} seconds</div>
+              <ul className="mt-2 flex flex-wrap gap-2">
+                {b.log.casts.map((cs) => { const sk = typeof cs.skill === "number" ? skill(cs.skill) : undefined; return (
+                  <li key={String(cs.skill)} className="flex items-center gap-2 rounded-full bg-paper-2 py-1 pl-1 pr-3 text-[13px]" title={sk?.name ?? String(cs.skill)}>
+                    {sk ? <img src={sk.icon} alt="" className="h-7 w-7 rounded-full" /> : <span className="grid h-7 w-7 place-items-center rounded-full bg-game text-[11px] text-white">{typeof cs.skill === "string" && cs.skill.startsWith("Weapon") ? "⇄" : "1"}</span>}
+                    <span className="max-w-[9rem] truncate">{sk?.name ?? cs.skill}</span><b className="num">{cs.count}</b>
+                  </li>
+                ); })}
+              </ul>
+              <p className="mt-3 text-[12px] text-ink-2">Source: <a href={b.log.url} className="text-accent hover:underline" target="_blank" rel="noreferrer">{b.log.url.replace("https://", "")}</a></p>
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="mt-16 grid gap-10 md:grid-cols-2">
         <div>
           <h2 className="text-3xl font-semibold">Where the stats come from</h2>
           <ul className="mt-4 grid gap-2 text-[15px]">
             {b.modifiers.map((m) => (
-              <li key={m.source} className="rounded-xl bg-paper-2 px-4 py-2.5"><b>{m.source}</b>{m.attr && <span className="num text-ink-2"> · {Object.entries(m.attr).map(([k, v]) => `+${v} ${k.replace(/([A-Z])/g, " $1").replace(/^./, (x) => x.toUpperCase())}`).join(", ")}</span>}
+              <li key={m.source} className="rounded-xl bg-paper-2 px-4 py-2.5"><b>{m.source}</b>{m.attr && <span className="num text-ink-2"> · {Object.entries(m.attr).map(([k, v]) => `+${v} ${attrName(k)}`).join(", ")}</span>}
                 {m.conditionDurationPct ? <span className="text-ink-2"> · +{m.conditionDurationPct}% condition duration</span> : null}{m.conditionDamagePct ? <span className="text-ink-2"> · +{m.conditionDamagePct}% condition damage</span> : null}{m.strikeDamagePct ? <span className="text-ink-2"> · +{m.strikeDamagePct}% strike damage</span> : null}{m.critChancePct ? <span className="text-ink-2"> · +{m.critChancePct}% crit chance</span> : null}
+                {m.conditionDurationBonus && <span className="text-ink-2"> · {Object.entries(m.conditionDurationBonus).map(([k, v]) => `+${v}% ${k} duration`).join(", ")}</span>}
+                {m.derivedConditionDamage && <span className="num text-ink-2"> · +{m.derivedConditionDamage.map((d) => `${d.pct}% of ${attrName(d.attr)}`).join(" and ")} as Condition Damage</span>}
+                {m.conditionDamageFromToughnessPct ? <span className="text-ink-2"> · +{m.conditionDamageFromToughnessPct}% of Toughness as Condition Damage</span> : null}
                 {(m.note || m.conditional) && <div className="text-[13px] text-ink-2">{m.conditional ?? m.note}</div>}</li>
             ))}
             <li className="rounded-xl bg-paper-2 px-4 py-2.5"><b>{b.relic.name}</b><div className="text-[13px] text-ink-2">{b.relic.effect}</div></li>

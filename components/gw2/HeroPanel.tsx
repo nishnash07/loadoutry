@@ -18,7 +18,8 @@ function Slot({ icon, label, sub, small }: { icon: string; label: string; sub?: 
 export function HeroPanel({ build, c }: { build: Gw2Build; c: Computed }) {
   const left = build.gear.filter((g) => ["Helm", "Shoulders", "Coat", "Gloves", "Leggings", "Boots"].includes(g.slot));
   const right = build.gear.filter((g) => ["Back", "Accessory1", "Accessory2", "Amulet", "Ring1", "Ring2"].includes(g.slot));
-  const weapons = build.gear.filter((g) => g.slot === "MainHand" || g.slot === "OffHand");
+  const weapons = build.gear.filter((g) => ["MainHand", "OffHand", "TwoHand"].includes(g.slot));
+  const sets = [weapons.filter((g) => g.set !== 2), weapons.filter((g) => g.set === 2)].filter((s) => s.length);
   const A = c.attrs;
   const rows: [string, string][] = [
     ["Power", String(A.power)], ["Toughness", String(A.toughness)], ["Vitality", String(A.vitality)], ["Precision", String(A.precision)],
@@ -34,18 +35,23 @@ export function HeroPanel({ build, c }: { build: Gw2Build; c: Computed }) {
           {left.map((g) => <Slot key={g.slot} icon={resolveIcon(g.icon)} label={g.label} sub={g.upgrade?.name} />)}
         </div>
         <div className="min-w-[240px] rounded-xl border border-[#3b3122] bg-black/30 p-4">
-          <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#b89a62]">Attributes · gear, traits and signet</div>
+          <div className="mb-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#b89a62]">Attributes · gear, traits and signets</div>
           {rows.map(([k, v]) => (
             <div key={k} className="num flex justify-between border-b border-white/5 py-[3px] text-[13px]"><span className="text-white/80">{k}</span><span className="font-semibold text-[#f2d9a8]">{v}</span></div>
           ))}
-          <div className="mt-3 text-[11px] leading-relaxed text-white/45">Fire main hand. In a raid add 25 might (+750 Power, +750 Condition Damage) and fury (+25% crit, {c.boonCritChance.toFixed(1)}% total).</div>
+          <div className="mt-3 text-[11px] leading-relaxed text-white/45">{build.heroNote} Crit chance with boons: {c.boonCritChance.toFixed(1)}%.</div>
         </div>
         <div className="grid gap-3">
           {right.map((g) => <Slot key={g.slot} icon={resolveIcon(g.icon)} label={g.label} sub={g.prefix.name} />)}
         </div>
       </div>
       <div className="grid gap-4 border-t border-[#4a3d26] bg-black/20 p-5 sm:grid-cols-2 lg:grid-cols-4">
-        {weapons.map((g) => <Slot key={g.slot} icon={resolveIcon(g.icon)} label={g.label} sub={g.upgrade?.name} />)}
+        {sets.map((s, i) => (
+          <div key={i} className="grid gap-3">
+            {sets.length > 1 && <div className="text-[11px] font-semibold uppercase tracking-[0.14em] text-[#b89a62]">Weapon set {i + 1}</div>}
+            {s.map((g) => <Slot key={g.slot + (g.set ?? 1)} icon={resolveIcon(g.icon)} label={g.label} sub={[g.upgrade?.name, g.upgrade2?.name].filter(Boolean).join(" · ")} />)}
+          </div>
+        ))}
         <Slot icon={resolveIcon(build.relic.icon)} label={build.relic.name} sub="Relic" />
         <div className="flex items-center gap-3">
           <Slot icon={item(build.food.id)?.icon ?? ""} label="" small />

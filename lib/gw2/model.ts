@@ -20,13 +20,24 @@ export const spec = (id: number) => SPECS[String(id)];
 export const item = (id: number) => ITEMS[String(id)];
 
 export type Attunement = "Fire" | "Water" | "Air" | "Earth";
-export type GearSlot = "Helm" | "Shoulders" | "Coat" | "Gloves" | "Leggings" | "Boots" | "Back" | "Accessory1" | "Accessory2" | "Amulet" | "Ring1" | "Ring2" | "MainHand" | "OffHand";
-const SLOT_BUDGET: Record<GearSlot, string> = { Helm: "Helm", Shoulders: "Shoulders", Coat: "Coat", Gloves: "Gloves", Leggings: "Leggings", Boots: "Boots", Back: "Back", Accessory1: "Accessory", Accessory2: "Accessory", Amulet: "Amulet", Ring1: "Ring", Ring2: "Ring", MainHand: "OneHand", OffHand: "OneHand" };
+export type GearSlot = "Helm" | "Shoulders" | "Coat" | "Gloves" | "Leggings" | "Boots" | "Back" | "Accessory1" | "Accessory2" | "Amulet" | "Ring1" | "Ring2" | "MainHand" | "OffHand" | "TwoHand";
+const SLOT_BUDGET: Record<GearSlot, string> = { Helm: "Helm", Shoulders: "Shoulders", Coat: "Coat", Gloves: "Gloves", Leggings: "Leggings", Boots: "Boots", Back: "Back", Accessory1: "Accessory", Accessory2: "Accessory", Amulet: "Amulet", Ring1: "Ring", Ring2: "Ring", MainHand: "OneHand", OffHand: "OneHand", TwoHand: "TwoHand" };
+/** Base health at level 80 before vitality (wiki "Health"). */
+const BASE_HP: Record<string, number> = { Elementalist: 1645, Guardian: 1645, Thief: 1645, Mesmer: 5922, Engineer: 5922, Ranger: 5922, Revenant: 5922, Warrior: 9212, Necromancer: 9212 };
 
-export interface GearPiece { slot: GearSlot; prefix: Prefix; icon: string; label: string; weapon?: string; upgrade?: { name: string; icon: string; effect: string } }
-export interface Modifier { source: string; attr?: Partial<Attrs>; note?: string; conditionDurationPct?: number; conditionDamagePct?: number; strikeDamagePct?: number; burningDurationPct?: number; bleedingDurationPct?: number; critChancePct?: number; conditional?: string }
+/** `set: 2` marks the second weapon set; only set 1 counts toward attributes. */
+export interface GearPiece { slot: GearSlot; prefix: Prefix; icon: string; label: string; weapon?: string; set?: 1 | 2; upgrade?: { name: string; icon: string; effect: string }; upgrade2?: { name: string; icon: string; effect: string } }
+export interface Modifier {
+  source: string; attr?: Partial<Attrs>; note?: string;
+  conditionDurationPct?: number; conditionDamagePct?: number; strikeDamagePct?: number; critChancePct?: number;
+  conditionDurationBonus?: Partial<Record<Condition, number>>; // per-condition duration bonus, additive with Condition Duration under the 100% cap
+  conditionDamageFromToughnessPct?: number; // Strength of Stone
+  derivedConditionDamage?: { attr: Attr; pct: number; offset?: number }[]; // tuning crystals: Condition Damage from a share of another attribute
+  conditional?: string; // present only some of the time: shown, not counted
+}
 
-export interface RotationStep { attune: string; skill: number | "auto" | "unravel" | "weaveself"; key: string; why: string; optional?: boolean }
+/** `attune` is the attunement pair (Elementalist) or the weapon set / state label (other professions). */
+export interface RotationStep { attune: string; skill: number | "auto" | "unravel" | "weaveself" | "swap"; key: string; why: string; optional?: boolean }
 export interface RotationPhase { title: string; intro: string; steps: RotationStep[] }
 
 export interface Gw2Build {
@@ -40,56 +51,62 @@ export interface Gw2Build {
   food: { id: number; effect: string }; utility: { id: number; effect: string }; jadeCore?: { id: number; effect: string };
   traits: { specId: number; choices: [number, number, number] }[]; // 1..3 per tier
   skills: { heal: number; utilities: [number, number, number]; elite: number; swapNote?: string };
+  /** Professions without attunements: weapon sets for the skill bar and the F1..F5 mechanic row. */
+  bar?: { sets: { label: string; skills: (number | undefined)[] }[]; mechanic: number[]; mechanicLabel: string; swapNote: string };
+  states?: Record<string, string>; // colours for rotation state labels (attunements are built in)
+  heroNote: string; damageNote: string;
   modifiers: Modifier[];
-  golem: { might: number; fury: boolean; quickness: boolean; alacrity: boolean };
+  golem: { might: number; fury: boolean; quickness: boolean; alacrity: boolean; vulnerability: number };
   keySkills: KeySkill[];
   rotation: RotationPhase[];
   concepts: { title: string; body: string }[];
+  log?: { url: string; dps: number; seconds: number; shares: { label: string; damage: number; note?: string }[]; casts: { skill: number | string; count: number }[] };
   sources: { label: string; url: string }[];
 }
 
 /** Hand-entered per-cast damage profile for the skills that matter (wiki skill facts, PvE values). */
 export interface KeySkill {
   id: number | "auto"; label?: string; weapon: string; castTime: number; recharge: number; attune: string;
-  hits: { coefficient: number; count?: number; note?: string }[];
-  conditions: { kind: Condition; stacks: number; duration: number; note?: string }[];
+  hits: { coefficient: number; count?: number; note?: string; weapon?: string }[];
+  conditions: { kind: Condition; stacks: number; duration: number; note?: string; onCrit?: boolean }[]; // onCrit: one application per critical hit, so stacks × crit chance
   note?: string;
 }
 
 export interface Computed {
   attrs: Attrs; critChance: number; critDamage: number; conditionDuration: number; vitalityHp: number;
-  boonCritChance: number; // with fury
+  boonCritChance: number; // with fury and permanent crit-chance traits
   rows: { skill: KeySkill; name: string; icon: string; strikeDmg: number; condDmg: number; total: number; perSecond: number }[];
 }
 
 export function computeBuild(b: Gw2Build): Computed {
   const attrs: Attrs = { ...BASE };
-  for (const g of b.gear) for (const [k, v] of Object.entries(slotAttrs(SLOT_BUDGET[g.slot], g.prefix))) attrs[k as Attr] += v ?? 0;
-  const condDurFlat: number[] = []; let condDmgPct = 0; let strikePct = 0; let burnDur = 0; let bleedDur = 0;
+  for (const g of b.gear) if (g.set !== 2) for (const [k, v] of Object.entries(slotAttrs(SLOT_BUDGET[g.slot], g.prefix))) attrs[k as Attr] += v ?? 0;
+  let condDurFlat = 0; let condDmgPct = 0; let strikePct = 0; let critPct = 0; const perCond: Partial<Record<Condition, number>> = {};
   for (const m of b.modifiers) {
     if (m.attr) for (const [k, v] of Object.entries(m.attr)) attrs[k as Attr] += v ?? 0;
-    if (m.conditionDurationPct) condDurFlat.push(m.conditionDurationPct);
-    if (m.conditionDamagePct && !m.conditional) condDmgPct += m.conditionDamagePct;
-    if (m.strikeDamagePct && !m.conditional) strikePct += m.strikeDamagePct;
-    if (m.burningDurationPct) burnDur += m.burningDurationPct;
-    if (m.bleedingDurationPct) bleedDur += m.bleedingDurationPct;
+    if (m.conditional) continue;
+    condDurFlat += m.conditionDurationPct ?? 0; condDmgPct += m.conditionDamagePct ?? 0; strikePct += m.strikeDamagePct ?? 0; critPct += m.critChancePct ?? 0;
+    for (const [k, v] of Object.entries(m.conditionDurationBonus ?? {})) perCond[k as Condition] = (perCond[k as Condition] ?? 0) + (v ?? 0);
   }
-  // derived-from-attribute sources (Potent Master Tuning Crystal, Strength of Stone) are applied after flat sums
-  attrs.conditionDamage += Math.floor(0.03 * (attrs.precision - 180)) + Math.floor(0.08 * attrs.expertise); // crystal: Snow Crows' figure matches precision before the signet
-  attrs.conditionDamage += Math.floor(0.1 * attrs.toughness); // Strength of Stone
+  // derived-from-attribute sources are applied after the flat sums; rounding matches the Snow Crows attribute panel
+  for (const m of b.modifiers) {
+    for (const d of m.derivedConditionDamage ?? []) attrs.conditionDamage += Math.round((d.pct / 100) * (attrs[d.attr] + (d.offset ?? 0)));
+    if (m.conditionDamageFromToughnessPct) attrs.conditionDamage += Math.floor((m.conditionDamageFromToughnessPct / 100) * attrs.toughness);
+  }
   const baseCrit = critChance(attrs.precision);
-  const condDur = conditionDurationFromExpertise(attrs.expertise) + condDurFlat.reduce((a, x) => a + x, 0);
+  const condDur = conditionDurationFromExpertise(attrs.expertise) + condDurFlat;
   const might = b.golem.might;
   const power = attrs.power + 30 * might;
   const cd = attrs.conditionDamage + 30 * might;
-  const boonCrit = Math.min(100, baseCrit + (b.golem.fury ? 25 : 0));
+  const boonCrit = Math.min(100, baseCrit + (b.golem.fury ? 25 : 0) + critPct);
   const cdm = critDamage(attrs.ferocity);
+  const vuln = 1 + b.golem.vulnerability / 100; // vulnerability raises strike and condition damage taken by 1% per stack
   const rows = b.keySkills.map((s) => {
-    const strikeDmg = s.hits.reduce((acc, h) => acc + expectCrit(strike(s.weapon, power, h.coefficient), boonCrit, cdm) * (h.count ?? 1), 0) * (1 + strikePct / 100);
-    const condDmg = s.conditions.reduce((acc, c) => acc + conditionTotal(c.kind, cd, c.stacks, c.duration, condDur + (c.kind === "burning" ? burnDur : c.kind === "bleeding" ? bleedDur : 0)), 0) * (1 + condDmgPct / 100);
+    const strikeDmg = s.hits.reduce((acc, h) => acc + expectCrit(strike(h.weapon ?? s.weapon, power, h.coefficient), boonCrit, cdm) * (h.count ?? 1), 0) * (1 + strikePct / 100) * vuln;
+    const condDmg = s.conditions.reduce((acc, c) => acc + conditionTotal(c.kind, cd, c.stacks * (c.onCrit ? boonCrit / 100 : 1), c.duration, condDur + (perCond[c.kind] ?? 0)), 0) * (1 + condDmgPct / 100) * vuln;
     const sk = s.id === "auto" ? undefined : skill(s.id);
     const total = strikeDmg + condDmg;
     return { skill: s, name: s.label ?? sk?.name ?? "", icon: sk?.icon ?? "", strikeDmg, condDmg, total, perSecond: total / Math.max(0.5, s.castTime) };
   });
-  return { attrs, critChance: baseCrit, critDamage: cdm, conditionDuration: condDur, vitalityHp: attrs.vitality * 10 + 1645, boonCritChance: boonCrit, rows };
+  return { attrs, critChance: baseCrit, critDamage: cdm, conditionDuration: condDur, vitalityHp: attrs.vitality * 10 + (BASE_HP[b.profession] ?? 1645), boonCritChance: boonCrit, rows };
 }
