@@ -1,0 +1,1626 @@
+{
+"71929": {
+"id": 71929,
+"name": "Scorching Shot",
+"icon": "https://render.guildwars2.com/file/DA6E9962EC9966CDBBC776F23347D16298AF4ADE/3256325.png",
+"description": "Burn your foe with a blazing bullet.",
+"type": "Weapon",
+"slot": "Weapon_1",
+"attunement": "Fire",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 2,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"72033": {
+"id": 72033,
+"name": "Soothing Splash",
+"icon": "https://render.guildwars2.com/file/D2092BE1DA1F2D1D93F67E07EE010BB113794C44/3256326.png",
+"description": "Shoot a bullet of water. Heal for each unique condition on the enemy.",
+"type": "Weapon",
+"slot": "Weapon_1",
+"attunement": "Water",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.4
+},
+{
+"text": "Healing per Unique Condition",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 23,
+"target": "Healing"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71904": {
+"id": 71904,
+"name": "Electric Exposure",
+"icon": "https://render.guildwars2.com/file/575D6048F7B2660A3BC0D3A93CECFD49EEB1C0D1/3256323.png",
+"description": "Electrify your enemy, making them vulnerable.",
+"type": "Weapon",
+"slot": "Weapon_1",
+"attunement": "Air",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.33
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+"duration": 6,
+"status": "Vulnerability",
+"description": "Damage and condition damage taken are increased; stacks intensity.",
+"apply_count": 1
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71893": {
+"id": 71893,
+"name": "Piercing Pebble",
+"icon": "https://render.guildwars2.com/file/4F217D25EBBFC017B4621C966BD26A7C4C6CD81C/3256324.png",
+"description": "Bleed your foe with sharp stone.",
+"type": "Weapon",
+"slot": "Weapon_1",
+"attunement": "Earth",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.35
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 5,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Pierces",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/F833590B593E0C2D4948DFFE9951B91655250052/1770207.png"
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71828": {
+"id": 71828,
+"name": "Raging Ricochet",
+"icon": "https://render.guildwars2.com/file/7ED653511F5A3F3E6D705FF706265D3370647644/3256329.png",
+"description": "Conjure a bullet that bounces to nearby enemies. Gain might for each target struck.\n\nIf you have a fire bullet, consume it to gain additional might. If not, create a fire bullet.",
+"type": "Weapon",
+"slot": "Weapon_2",
+"attunement": "Fire",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 6
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"72028": {
+"id": 72028,
+"name": "Frigid Flurry",
+"icon": "https://render.guildwars2.com/file/11DB6D78E16F6ACDE1000BF4AEF69ED5A9410BA9/3256330.png",
+"description": "Fire a volley of icy bullets that inflict bleeding.\n\nIf you have an ice bullet, consume it to heal for each strike. If not, create an ice bullet.",
+"type": "Weapon",
+"slot": "Weapon_2",
+"attunement": "Water",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 5
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 20,
+"finisher_type": "Projectile"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71966": {
+"id": 71966,
+"name": "Dazing Discharge",
+"icon": "https://render.guildwars2.com/file/43FE5D1C5B3D70422F324071037AC844CE9C01F3/3256327.png",
+"description": "Fire a shot that dazes your foe and leaves them vulnerable. \n\nIf you have an air bullet, consume it to reduce the cooldown of your next pistol skill. If not, create an air bullet.",
+"type": "Weapon",
+"slot": "Weapon_2",
+"attunement": "Air",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 8
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"72032": {
+"id": 72032,
+"name": "Shattering Stone",
+"icon": "https://render.guildwars2.com/file/387446B9ED09274D20200C2F066BF4311E6D0C93/3256328.png",
+"description": "Fire a shot that shatters into multiple shards.\n\nIf you have an earth bullet, consume it to enhance your next few attacks to inflict bleeding. If not, create an earth bullet.",
+"type": "Weapon",
+"slot": "Weapon_2",
+"attunement": "Earth",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 6
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71863": {
+"id": 71863,
+"name": "Frostfire Flurry",
+"icon": "https://render.guildwars2.com/file/94A852009195CE9727D9BC463622A0C3566E0AF6/3256341.png",
+"description": "Dual Attack. Fire multiple bullets of fire and ice, inflicting conditions.\n\nIf you have a fire bullet, consume it to gain fire aura. If you have an ice bullet, consume it to cause the ice shots to inflict additional conditions.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Fire",
+"dual_attunement": "Water",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 15
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71898": {
+"id": 71898,
+"name": "Purblinding Plasma",
+"icon": "https://render.guildwars2.com/file/22F037530AE534D9010D0AECA94701F915CEEC11/3256339.png",
+"description": "Dual Attack. Fire a ball of plasma that explodes when it hits, striking enemies behind the target.\n\nIf you have a fire bullet, consume it to create an area of fire beneath the initial target. If you have an air bullet, consume it to reduce the cooldown of this skill.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Fire",
+"dual_attunement": "Air",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Projectile"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71993": {
+"id": 71993,
+"name": "Molten Meteor",
+"icon": "https://render.guildwars2.com/file/04A87E6C08F06B1F909CD52D4CF62106FD1D2B97/3256340.png",
+"description": "Dual Attack. Bombard your foe with a meteor that inflicts multiple conditions.\n\nIf you have a fire bullet, consume it to cause the shot to explode when it strikes an enemy, damaging other foes in the blast. If you have an earth bullet, consume it to inflict additional bleeding.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Fire",
+"dual_attunement": "Earth",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71960": {
+"id": 71960,
+"name": "Flowing Finesse",
+"icon": "https://render.guildwars2.com/file/AE34310A3F1A36D4938002B8E6790DE465CD93C7/3256342.png",
+"description": "Dual Attack. Evade backward and grant yourself boons.\n\nIf you have an ice bullet, consume it to gain frost aura. If you have an air bullet, consume it to gain superspeed.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Water",
+"dual_attunement": "Air",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"72062": {
+"id": 72062,
+"name": "Echoing Erosion",
+"icon": "https://render.guildwars2.com/file/C278C6CDF006FFA5F375499C6011803AB9741CBC/3256343.png",
+"description": "Dual Attack. Bleed your foe with ice and stone.\n\nIf you have an ice bullet, consume it to heal yourself. If you have an earth bullet, consume it to grant yourself barrier.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Water",
+"dual_attunement": "Earth",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 15
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"72023": {
+"id": 72023,
+"name": "Enervating Earth",
+"icon": "https://render.guildwars2.com/file/0552325DD95B09D569414E04D060120EE1EFA109/3256338.png",
+"description": "Dual Attack. Fire a quick shot that debilitates your target. \n\nIf you have an air bullet, consume it to also inflict daze. If you have an earth bullet, consume it to also inflict bleeding on your target.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Air",
+"dual_attunement": "Earth",
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Projectile"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71940": {
+"id": 71940,
+"name": "Searing Salvo",
+"icon": "https://render.guildwars2.com/file/7546C0CAE32CD437249FC903BF1AC84122B0EAC4/3256335.png",
+"description": "Fire a shot that explodes into fragments of fire when it hits the ground.\n\nIf you have a fire bullet, consume it to gain a fire aura. If not, create a fire bullet.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Fire",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 180
+},
+{
+"text": "Blast Radius",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 120
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Blast"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71935": {
+"id": 71935,
+"name": "Frozen Fusillade",
+"icon": "https://render.guildwars2.com/file/12144A540D981D6AC7010A7A34C1B3EF0A02D7F5/3256336.png",
+"description": "Fire a shot that freezes the ground underneath it, creating an area that speeds up allies while slowing enemy movement.\n\nIf you have an ice bullet, consume it to cause the frozen ground to shatter when it expires. If not, create an ice bullet.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Water",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 15
+},
+{
+"text": "Unblockable",
+"type": "Unblockable",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": true
+},
+{
+"text": "Combo Field",
+"type": "ComboField",
+"icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png",
+"field_type": "Ice"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71857": {
+"id": 71857,
+"name": "Aerial Agility",
+"icon": "https://render.guildwars2.com/file/ADD2E4D6D49F22AF2C033058A6FF02BD316BFBC9/3256331.png",
+"description": "Dash then fire a quick shot. If the shot hits, you can dash again for a short time.\n\nIf you have an air bullet, consume it to remove inhibiting conditions at the start of the dash. If not, create an air bullet.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Air",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Leap"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"71842": {
+"id": 71842,
+"name": "Boulder Blast",
+"icon": "https://render.guildwars2.com/file/C0122C48115C5E59D499E101764C94CA6047062F/3256334.png",
+"description": "Launch a large boulder that bleeds and immobilizes your foe.\n\nIf you have an earth bullet, consume it to gain barrier when striking an enemy. If not, create an earth bullet.",
+"type": "Weapon",
+"slot": "Weapon_3",
+"attunement": "Earth",
+"dual_attunement": null,
+"weapon_type": "Pistol",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 900
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Projectile"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"29548": {
+"id": 29548,
+"name": "Heat Sync",
+"icon": "https://render.guildwars2.com/file/6B4C0B3DFDB4FDDCB22552719D980D9E4AE2C9D1/1029998.png",
+"description": "Give might and fury to yourself, then spread boons you have to allies.",
+"type": "Weapon",
+"slot": "Weapon_4",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 10,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 10,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/96D90DF84CAFE008233DD1C2606A12C1A0E68048/102842.png",
+"duration": 0,
+"status": "Fury",
+"description": "Critical chance increased; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 0,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 600
+},
+{
+"text": "Number of Allied Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Number of Allied Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"30864": {
+"id": 30864,
+"name": "Tidal Surge",
+"icon": "https://render.guildwars2.com/file/466520602A5AFD1D46454AAED74B5849C40F6FBA/1030000.png",
+"description": "Send out a tidal wave that regenerates and heal allies, then knocks enemies back.",
+"type": "Weapon",
+"slot": "Weapon_4",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 360
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Healing",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 1302,
+"target": "Healing"
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+"duration": 8,
+"status": "Regeneration",
+"description": "Gain health every second; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 1
+},
+{
+"text": "Knockback",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/400B7FD39724FBD700B94AB8AB52B5B9167646F4/2440715.png",
+"distance": 240
+},
+{
+"text": "Healing Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Blast"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"30008": {
+"id": 30008,
+"name": "Cyclone",
+"icon": "https://render.guildwars2.com/file/3B78057FC723254A0BCDAEAC0D9D49E290F6F9D8/1029994.png",
+"description": "Blast out a cyclone that pulls enemies toward its location and grants swiftness to allies it affects.",
+"type": "Weapon",
+"slot": "Weapon_4",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 750
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 25
+},
+{
+"type": "BuffArray",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.9
+},
+{
+"text": "Pull",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/D5F6EBC4630F0E10F3DDB7A6DBB63592CD4B00BC/2440717.png",
+"value": 180
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 3
+},
+{
+"text": "Number of Impacts",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 9
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"29453": {
+"id": 29453,
+"name": "Sand Squall",
+"icon": "https://render.guildwars2.com/file/7B047DE80C026DCF420E43DD16D80409E8C679A4/1029996.png",
+"description": "Apply protection to you and your allies, then increase the duration of all boons currently existing on you and your allies. Gain magnetic aura.",
+"type": "Weapon",
+"slot": "Weapon_4",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png",
+"duration": 4,
+"status": "Magnetic Aura",
+"description": "Reflect projectiles with magnetic energy.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+"duration": 2,
+"status": "Protection",
+"description": "Incoming strike damage decreased by 33%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Duration Increase",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 3
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 600
+},
+{
+"text": "Combo Finisher",
+"type": "ComboFinisher",
+"icon": "https://render.guildwars2.com/file/A513F3653D33FBA4220D2D307799F8A327A36A3B/156656.png",
+"percent": 100,
+"finisher_type": "Blast"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"29533": {
+"id": 29533,
+"name": "Wildfire",
+"icon": "https://render.guildwars2.com/file/9E33D36DB142E4F9C7C21CA9CD06D76B000FE506/1029999.png",
+"description": "Release a fiery torrent that burns enemies.",
+"type": "Weapon",
+"slot": "Weapon_5",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.44
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 3,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 180
+},
+{
+"text": "Duration",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 8
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 1
+},
+{
+"text": "Distance",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"distance": 600
+},
+{
+"text": "Combo Field",
+"type": "ComboField",
+"icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png",
+"field_type": "Fire"
+}
+],
+"traited_facts": [
+{
+"text": "Duration",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 10,
+"requires_trait": 1510,
+"overrides": 4
+}
+],
+"categories": null
+},
+"30446": {
+"id": 30446,
+"name": "Water Globe",
+"icon": "https://render.guildwars2.com/file/5CFE011C13BB571BB2735FF729A1FB0F6A31BAD7/1030001.png",
+"description": "Blast out a watery orb that heals allies as it travels.",
+"type": "Weapon",
+"slot": "Weapon_5",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 750
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Healing",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 470,
+"target": "Healing"
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Pulses",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 4
+},
+{
+"text": "Combo Field",
+"type": "ComboField",
+"icon": "https://render.guildwars2.com/file/59E0DB6A699810641C959926ADFEF73E08CC255B/156655.png",
+"field_type": "Water"
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"30795": {
+"id": 30795,
+"name": "Lightning Orb",
+"icon": "https://render.guildwars2.com/file/F94EF9AA5A3B073807426D499F6353C91F7BC09F/1029995.png",
+"description": "Launch an orb of lightning that fires projectiles at nearby foes.",
+"type": "Weapon",
+"slot": "Weapon_5",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 25
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.8
+},
+{
+"text": "Minimum Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.05
+},
+{
+"text": "Damage Reduction per Hit",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 10
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+"duration": 10,
+"status": "Vulnerability",
+"description": "Damage and condition damage taken are increased; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Missile Launch Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 0
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 360
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"30336": {
+"id": 30336,
+"name": "Dust Storm",
+"icon": "https://render.guildwars2.com/file/210E23C1C2BE30F21C1C98C6FF4B053DFFC9BA1C/1029997.png",
+"description": "Grant boons to nearby allies and summon a dust storm that inflicts conditions.",
+"type": "Weapon",
+"slot": "Weapon_5",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "Warhorn",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 750
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.3
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 10,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/09770136BB76FD0DBE1CC4267DEED54774CB20F6/102837.png",
+"duration": 2,
+"status": "Blinded",
+"description": "Next outgoing attack misses; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 180
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 2
+},
+{
+"text": "Duration",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 5
+},
+{
+"text": "Number of Impacts",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 5
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png",
+"duration": 4,
+"status": "Resistance",
+"description": "Nondamaging conditions currently on you are ineffective; stacks duration.",
+"apply_count": 1
+}
+],
+"traited_facts": null,
+"categories": null
+},
+"5503": {
+"id": 5503,
+"name": "Signet of Restoration",
+"icon": "https://render.guildwars2.com/file/3FA4D3DCA80A06036E7F6C77E84D94466D157766/103321.png",
+"description": "Signet Passive: Grants health every time you cast a spell. \nSignet Active: Heal yourself.",
+"type": "Heal",
+"slot": "Heal",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "None",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 20
+},
+{
+"text": "Healing",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 3275,
+"target": "Healing"
+},
+{
+"text": "Healing per Cast",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 202,
+"target": "Healing"
+},
+{
+"text": "Healing per Cast",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D4347C52157B040943051D7E09DEAD7AF63D4378/156662.png",
+"value": 171,
+"target": "Healing"
+}
+],
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+"duration": 4,
+"status": "Frost Aura",
+"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
+"apply_count": 1,
+"requires_trait": 287
+}
+],
+"categories": [
+"Signet"
+]
+},
+"5571": {
+"id": 5571,
+"name": "Signet of Earth",
+"icon": "https://render.guildwars2.com/file/DC27E04D9F9CE5627D953752B5F334C7A304B7F5/103352.png",
+"description": "Signet Passive: Reduce incoming strike damage.\nSignet Active: Immobilize and bleed your foe.",
+"type": "Utility",
+"slot": "Utility",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "None",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 15
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.5
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/DC27E04D9F9CE5627D953752B5F334C7A304B7F5/103352.png",
+"duration": 0,
+"status": "Signet of Earth",
+"description": "Reduce incoming strike damage.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 9,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 4
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+"duration": 3,
+"status": "Immobile",
+"description": "Unable to move; stacks duration.",
+"apply_count": 1
+}
+],
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png",
+"duration": 3,
+"status": "Magnetic Aura",
+"description": "Reflect projectiles with magnetic energy.",
+"apply_count": 1,
+"requires_trait": 287
+}
+],
+"categories": [
+"Signet"
+]
+},
+"5542": {
+"id": 5542,
+"name": "Signet of Fire",
+"icon": "https://render.guildwars2.com/file/78F000A3121FCFF9B56EA62625186F0E06D8A458/103340.png",
+"description": "Signet Passive: Improves critical chance.\nSignet Active: Burn your target and nearby foes.",
+"type": "Utility",
+"slot": "Utility",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "None",
+"facts": [
+{
+"text": "Range",
+"type": "Range",
+"icon": "https://render.guildwars2.com/file/0AAB34BEB1C9F4A25EC612DDBEACF3E20B2810FA/156666.png",
+"value": 1200
+},
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 12
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.5
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 10,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/78F000A3121FCFF9B56EA62625186F0E06D8A458/103340.png",
+"duration": 0,
+"status": "Signet of Fire",
+"description": "Improved precision.",
+"apply_count": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"traited_facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2E7050E44690AFE0A396FA0DAD526699392743F3/2261521.png",
+"duration": 4,
+"status": "Fire Aura",
+"description": "Enveloped in a fiery shield that burns foes, grants might each time you are struck (1-second cooldown per attacker).",
+"apply_count": 1,
+"requires_trait": 287
+}
+],
+"categories": [
+"Signet"
+]
+},
+"40183": {
+"id": 40183,
+"name": "Primordial Stance",
+"icon": "https://render.guildwars2.com/file/9A03F9CFBBE6154A41B1B5CAC4060092C11FABDA/1770332.png",
+"description": "Stance. Channel the prime elements at their core, dealing damage based on your current attunements. Fully attuning deals the same condition twice.",
+"type": "Utility",
+"slot": "Utility",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "None",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 5
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.33
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/9A03F9CFBBE6154A41B1B5CAC4060092C11FABDA/1770332.png",
+"duration": 5,
+"status": "Primordial Stance",
+"description": "Deal damage and inflict conditions based on your current attunements.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 2,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/1C91E9C799469ACC6EAF1ACD4B0AD8ACAB0C69A2/103035.png",
+"status": "Fire Attunement",
+"description": "Cast fire spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+"duration": 1,
+"status": "Chilled",
+"description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/737E1B9F7855B9F5D3DE1C990CD42118EF3D1C92/102820.png",
+"status": "Water Attunement",
+"description": "Cast water spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/3A394C1A0A3257EB27A44842DDEEF0DF000E1241/102850.png",
+"duration": 3,
+"status": "Vulnerability",
+"description": "Damage and condition damage taken are increased; stacks intensity.",
+"apply_count": 8,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
+"status": "Air Attunement",
+"description": "Cast air spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 6,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 2,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+"status": "Earth Attunement",
+"description": "Cast earth spells."
+}
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 1
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 180
+},
+{
+"text": "Maximum Count",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 2
+},
+{
+"text": "Count Recharge",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 20
+},
+{
+"text": "Count Recharge",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 25
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+}
+],
+"traited_facts": null,
+"categories": [
+"Stance"
+]
+},
+"43638": {
+"id": 43638,
+"name": "Weave Self",
+"icon": "https://render.guildwars2.com/file/E656D3A8B1339603A70BBB7237F2BA004258ED55/1770326.png",
+"description": "Stance. Temporarily reduce the recharge time of attunements while gaining bonuses for attuning to new elements. Successfully attuning to all elements ends this stance and grants Perfect Weave.",
+"type": "Elite",
+"slot": "Elite",
+"attunement": null,
+"dual_attunement": null,
+"weapon_type": "None",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 90
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E656D3A8B1339603A70BBB7237F2BA004258ED55/1770326.png",
+"duration": 20,
+"status": "Weave Self",
+"description": "Gather the elements to become the ultimate being.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/0597C2D6803EBDB3E309A1AEA1F5B7D414D208D9/1770336.png",
+"duration": 0,
+"status": "Woven Fire",
+"description": "Gain increased condition damage.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/1C91E9C799469ACC6EAF1ACD4B0AD8ACAB0C69A2/103035.png",
+"status": "Fire Attunement",
+"description": "Attune to fire, gaining heavy damage and burning abilities."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/490A54586F7D28AEE6E9A551F6B4DC0841B81AD0/1770340.png",
+"duration": 0,
+"status": "Woven Water",
+"description": "Boon duration and outgoing healing to other allies is increased.",
+"apply_count": 0,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/737E1B9F7855B9F5D3DE1C990CD42118EF3D1C92/102820.png",
+"status": "Water Attunement",
+"description": "Attune to water, gaining superior support and healing abilities."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/CEE660D6BB939A06695643F5CEBA1F295B022305/1770333.png",
+"duration": 0,
+"status": "Woven Air",
+"description": "You move quicker and deal increased strike damage.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
+"status": "Air Attunement",
+"description": "Attune to air, gaining heavy damage and control abilities."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/2DDE45C45EFBF5CC6D0C0562AB730FBB58021547/1770342.png",
+"duration": 0,
+"status": "Woven Earth",
+"description": "Incoming damage is reduced.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+"status": "Earth Attunement",
+"description": "Attune to earth, gaining superior damage-over-time and defensive abilities."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/E656D3A8B1339603A70BBB7237F2BA004258ED55/1770326.png",
+"duration": 10,
+"status": "Perfect Weave",
+"description": "All elements are now tightly woven together.",
+"apply_count": 1
+},
+{
+"text": "Recharge Time",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 2
+}
+],
+"traited_facts": null,
+"categories": [
+"Stance"
+]
+}
+}

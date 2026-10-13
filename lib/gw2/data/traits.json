@@ -1,0 +1,1234 @@
+{
+"320": {
+"id": 320,
+"name": "Empowering Flame",
+"icon": "https://render.guildwars2.com/file/7F0BD23838FA4E0CD2336B04C7E5AB0ED03358EB/1012315.png",
+"description": "Gain power while in fire attunement.",
+"specialization": 31,
+"tier": 1,
+"slot": "Minor",
+"facts": [
+{
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D6CAECEA0FD5FADE04DD6970384ADC5DE309C506/2229322.png",
+"value": 150,
+"target": "Power"
+}
+]
+},
+"318": {
+"id": 318,
+"name": "Sunspot",
+"icon": "https://render.guildwars2.com/file/1405047ED70DE30F80B1F6304A787B215BB50878/1012316.png",
+"description": "Gain a fire aura, and damage nearby foes when you attune to fire.<br><c=@reminder>Also triggers on overload skills.</c>",
+"specialization": 31,
+"tier": 2,
+"slot": "Minor",
+"facts": [
+{
+"text": "Combat Only",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+}
+]
+},
+"319": {
+"id": 319,
+"name": "Pyromancer's Training",
+"icon": "https://render.guildwars2.com/file/7C751D2FA513070209F24809D5232757000B1546/2175044.png",
+"description": "Your fire-weapon skills gain reduced recharge. Deal increased strike damage to burning foes.",
+"specialization": 31,
+"tier": 3,
+"slot": "Minor",
+"facts": [
+{
+"text": "Recharge Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 20
+},
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 10
+},
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 7
+}
+]
+},
+"296": {
+"id": 296,
+"name": "Burning Precision",
+"icon": "https://render.guildwars2.com/file/774471FA3841BB90EB6F935A76D8017A0C4B005E/1012306.png",
+"description": "Burning you inflict has increased duration and your critical hits gain a chance to inflict burning.",
+"specialization": 31,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 5
+},
+{
+"text": "Chance on Critical Hit",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"percent": 33
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 3,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 20
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 15
+}
+]
+},
+"328": {
+"id": 328,
+"name": "Conjurer",
+"icon": "https://render.guildwars2.com/file/6BE466F790D5410D2E10512B1F0A523EEEB776B0/1012307.png",
+"description": "Gain fire aura when an ally picks up a conjured weapon.",
+"specialization": 31,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2E7050E44690AFE0A396FA0DAD526699392743F3/2261521.png",
+"duration": 4,
+"status": "Fire Aura",
+"description": "Enveloped in a fiery shield that burns foes, grants might each time you are struck (1-second cooldown per attacker).",
+"apply_count": 1
+}
+]
+},
+"335": {
+"id": 335,
+"name": "Burning Fire",
+"icon": "https://render.guildwars2.com/file/0850B1BC61637D04045533CCDACFB5796F47B4CF/1012308.png",
+"description": "Cast Lesser Cleansing Fire when you have a number of\u00a0conditions\u00a0on you.",
+"specialization": 31,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Conditions to Trigger",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 3
+}
+]
+},
+"325": {
+"id": 325,
+"name": "Burning Rage",
+"icon": "https://render.guildwars2.com/file/AB4E6CB3066DFF2D3C179B026C9BC371799E5D67/2175045.png",
+"description": "Sunspot inflicts burning, and its radius is increased. Your condition damage is increased.",
+"specialization": 31,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/0120CB042BFC2EA6A45BC3DB45155FECDDDE1910/2229318.png",
+"value": 180,
+"target": "ConditionDamage"
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 4,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 4,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Radius Increase",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"value": 60
+}
+]
+},
+"340": {
+"id": 340,
+"name": "Smothering Auras",
+"icon": "https://render.guildwars2.com/file/32EB577B3EC6D2AC0AC4EDB4A799EE5E4F2B1341/1012310.png",
+"description": "Fire auras have increased duration. Applying auras to allies removes conditions, and transmuting auras removes conditions from nearby allies.",
+"specialization": 31,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 33
+},
+{
+"text": "Removal upon Application",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1
+},
+{
+"text": "Removal upon Transmute",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 2
+}
+]
+},
+"334": {
+"id": 334,
+"name": "Power Overwhelming",
+"icon": "https://render.guildwars2.com/file/5D0937674DCD7AAAE80B4D243AFBDC753DFF220B/1012311.png",
+"description": "While at or above the might threshold, gain increased power. Power bonuses are doubled while attuned to fire.",
+"specialization": 31,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Stack Threshold",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 10
+},
+{
+"text": "Stack Threshold",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 8
+},
+{
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/D6CAECEA0FD5FADE04DD6970384ADC5DE309C506/2229322.png",
+"value": 150,
+"target": "Power"
+}
+]
+},
+"1510": {
+"id": 1510,
+"name": "Persisting Flames",
+"icon": "https://render.guildwars2.com/file/38496307B7C27BCB08D6800F2A699B4998DD1935/1012312.png",
+"description": "Fire fields created by weapon skills last longer. Whenever your fire fields hit a foe or you inflict burning, gain increased strike damage for a duration.",
+"specialization": 31,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Duration Increase",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 2
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/38496307B7C27BCB08D6800F2A699B4998DD1935/1012312.png",
+"duration": 15,
+"status": "Persisting Flames",
+"description": "Deal increased strike damage per stack.",
+"apply_count": 1
+},
+{
+"text": "Maximum Stacks",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/B4490FB81AA1E7C06F1B22056AE09A0F54CBE2C4/1770201.png",
+"value": 5
+}
+]
+},
+"294": {
+"id": 294,
+"name": "Pyromancer's Puissance",
+"icon": "https://render.guildwars2.com/file/998095CB1FD2CF0164B8A36BABFDB911DF08DB02/1012313.png",
+"description": "Gain might for using any skill while attuned to fire. When leaving fire attunement or successfully completing a fire overload, unleash a Flame Expulsion.",
+"specialization": 31,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 15,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Combat Only",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+}
+]
+},
+"1675": {
+"id": 1675,
+"name": "Inferno",
+"icon": "https://render.guildwars2.com/file/150B4E2CB4039B33152D496FF04E9B1644E22E0A/1012314.png",
+"description": "Burning you inflict scales off of your power instead of your condition damage.",
+"specialization": 31,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/B47BF5803FED2718D7474EAF9617629AD068EE10/102849.png",
+"duration": 0,
+"status": "Burning",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 1
+},
+{
+"text": "Power Converted to Burning Damage",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"percent": 8.25
+},
+{
+"text": "Power Converted to Burning Damage",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"percent": 6
+}
+]
+},
+"278": {
+"id": 278,
+"name": "Stone Flesh",
+"icon": "https://render.guildwars2.com/file/9FACD0F31DF1DF1957C59DA67ED9F76ACB55BEB8/1012303.png",
+"description": "Strike damage taken is reduced while attuned to earth.",
+"specialization": 26,
+"tier": 1,
+"slot": "Minor",
+"facts": [
+{
+"text": "Damage Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 7
+}
+]
+},
+"279": {
+"id": 279,
+"name": "Earthen Blast",
+"icon": "https://render.guildwars2.com/file/2531DCAFAEAB452C90C4572E1ADCE8236DCF5636/1012304.png",
+"description": "Gain barrier and cripple nearby foes when attuning to earth.<br><c=@reminder>Also triggers on overload skills. Barrier will not be gained when attuning to the same element.</c>",
+"specialization": 26,
+"tier": 2,
+"slot": "Minor",
+"facts": [
+{
+"text": "Barrier",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+"value": 1302,
+"target": "Healing"
+},
+{
+"text": "Barrier",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+"value": 800,
+"target": "Healing"
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.36
+},
+{
+"text": "Damage",
+"type": "Damage",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"hit_count": 1,
+"dmg_multiplier": 0.1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+"duration": 3,
+"status": "Crippled",
+"description": "Movement speed decreased by 50%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+},
+{
+"text": "Cannot Critical Hit",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/63015872E20761F5E76F803A90666FBE4E262BC9/536051.png"
+},
+{
+"text": "Combat Only",
+"type": "NoData",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png"
+}
+]
+},
+"280": {
+"id": 280,
+"name": "Geomancer's Training",
+"icon": "https://render.guildwars2.com/file/3659F1C53B0CF50106ADBC4E6351011A24F59CBA/2175043.png",
+"description": "Strike damage from nearby foes is reduced. Earth weapon skills gain reduced recharge.",
+"specialization": 26,
+"tier": 3,
+"slot": "Minor",
+"facts": [
+{
+"text": "Damage Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 10
+},
+{
+"text": "Range Threshold",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 360
+},
+{
+"text": "Recharge Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 20
+}
+]
+},
+"282": {
+"id": 282,
+"name": "Earth's Embrace",
+"icon": "https://render.guildwars2.com/file/94B6E0582A0CC93604F12220F703C5D22C59097A/1012294.png",
+"description": "Gain resistance after using a healing skill.",
+"specialization": 26,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 15
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png",
+"duration": 4,
+"status": "Resistance",
+"description": "Nondamaging conditions currently on you are ineffective; stacks duration.",
+"apply_count": 1
+}
+]
+},
+"1507": {
+"id": 1507,
+"name": "Serrated Stones",
+"icon": "https://render.guildwars2.com/file/0A2B6F1BC25AC118B67DC31F9A0BA6427ABB6A6A/1012295.png",
+"description": "Bleeding you inflict has increased duration. Deal increased damage to bleeding foes.",
+"specialization": 26,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Damage Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/61AA4919C4A7990903241B680A69530121E994C7/156657.png",
+"percent": 5
+},
+{
+"text": "Duration Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 20
+}
+]
+},
+"289": {
+"id": 289,
+"name": "Elemental Shielding",
+"icon": "https://render.guildwars2.com/file/9EA9E5B50D71ACE02E1413073901CD2B152E559C/1012296.png",
+"description": "Auras you grant to allies also grant protection.",
+"specialization": 26,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+"duration": 3,
+"status": "Protection",
+"description": "Incoming strike damage decreased by 33%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+"duration": 2,
+"status": "Protection",
+"description": "Incoming strike damage decreased by 33%; stacks duration.",
+"apply_count": 1
+}
+]
+},
+"275": {
+"id": 275,
+"name": "Strength of Stone",
+"icon": "https://render.guildwars2.com/file/567BA00AEB795B5021E5924CC3511DE3AAC26438/1012297.png",
+"description": "Gain condition damage based on your toughness. Inflict bleeding when you immobilize a foe.<br><c=@reminder>Bleeding can only occur on the same target once per interval.</c>",
+"specialization": 26,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Attribute Conversion",
+"type": "BuffConversion",
+"icon": "https://render.guildwars2.com/file/0120CB042BFC2EA6A45BC3DB45155FECDDDE1910/2229318.png",
+"percent": 10,
+"source": "Toughness",
+"target": "ConditionDamage"
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/79FF0046A5F9ADA3B4C4EC19ADB4CB124D5F0021/102848.png",
+"duration": 10,
+"status": "Bleeding",
+"description": "Deals damage every second; stacks intensity.",
+"apply_count": 3
+},
+{
+"text": "Interval",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/B75E91EB22E0DFCC1D08030204055946506D56F6/1770206.png",
+"duration": 3
+}
+]
+},
+"281": {
+"id": 281,
+"name": "Rock Solid",
+"icon": "https://render.guildwars2.com/file/4D23C1FE504D402ABF3E80F30FE396A9FA55A63E/1012298.png",
+"description": "Grant stability to nearby allies when attuning to earth.\n<c=@reminder>Note: This effect will not trigger when attuning to the same element.</c>",
+"specialization": 26,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/3D3A1C2D6D791C05179AB871902D28782C65C244/415959.png",
+"duration": 3,
+"status": "Stability",
+"description": "Cannot be knocked down, pushed back, pulled, launched, stunned, dazed, floated, sunk, feared, or taunted.",
+"apply_count": 1
+},
+{
+"text": "Number of Targets",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/BBE8191A494B0352259C10EADFDACCE177E6DA5B/1770208.png",
+"value": 5
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 240
+}
+]
+},
+"277": {
+"id": 277,
+"name": "Earthen Blessing",
+"icon": "https://render.guildwars2.com/file/9A2144F4A44AFF9AA3B9099405F0EA36F226CD27/2175042.png",
+"description": "Decrease the duration of movement-impairing conditions applied to you. Restore endurance when you receive one of these conditions.",
+"specialization": 26,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Duration Decreased",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"percent": 33
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/28C4EC547A3516AF0242E826772DA43A5EAC3DF3/102839.png",
+"duration": 0,
+"status": "Chilled",
+"description": "Movement speed decreased by 66%; skill cooldown increased by 66%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/070325E519C178D502A8160523766070D30C0C19/102838.png",
+"duration": 0,
+"status": "Crippled",
+"description": "Movement speed decreased by 50%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/397A613651BFCA2832B6469CE34735580A2C120E/102844.png",
+"duration": 0,
+"status": "Immobile",
+"description": "Unable to move; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Endurance Gained",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 10
+},
+{
+"text": "Endurance Gained",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 5
+}
+]
+},
+"1508": {
+"id": 1508,
+"name": "Diamond Skin",
+"icon": "https://render.guildwars2.com/file/D1014421F0E06325664204C905200002987E38C5/1012300.png",
+"description": "Remove conditions from yourself when you successfully combo a field with a leap finisher. Remove conditions from nearby allies when you successfully combo a field with a blast finisher.",
+"specialization": 26,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 1
+},
+{
+"text": "Conditions Removed on Leap",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1
+},
+{
+"text": "Conditions Removed on Blast",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 2
+},
+{
+"text": "Radius",
+"type": "Distance",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"distance": 300
+}
+]
+},
+"287": {
+"id": 287,
+"name": "Written in Stone",
+"icon": "https://render.guildwars2.com/file/5160CCF906702A4478C533EF5DA6BD02956E9378/1012301.png",
+"description": "<c=@abilitytype>Signets</c> continue to grant their passive bonuses while recharging. Gain an aura when you use a <c=@abilitytype>signet</c> skill.",
+"specialization": 26,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+"duration": 4,
+"status": "Frost Aura",
+"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/3FA4D3DCA80A06036E7F6C77E84D94466D157766/103321.png",
+"status": "Signet of Restoration",
+"description": "<c=@abilitytype>Signet Passive:</c> Grants health every time you cast a spell. <br><c=@abilitytype>Signet Active:</c> Heal yourself."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/2E7050E44690AFE0A396FA0DAD526699392743F3/2261521.png",
+"duration": 4,
+"status": "Fire Aura",
+"description": "Enveloped in a fiery shield that burns foes, grants might each time you are struck (1-second cooldown per attacker).",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/78F000A3121FCFF9B56EA62625186F0E06D8A458/103340.png",
+"status": "Signet of Fire",
+"description": "<c=@abilitytype>Signet Passive:</c> Improves critical chance.<br><c=@abilitytype>Signet Active:</c> Burn your target and nearby foes."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+"duration": 4,
+"status": "Frost Aura",
+"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/950EABEE51A5B7E116609A2C4869B2BDF3760ED1/103351.png",
+"status": "Signet of Water",
+"description": "<c=@abilitytype>Signet Passive:</c> Reduces incoming condition duration.<br><c=@abilitytype>Signet Active:</c> Damage and chill foes while healing and reviving allies in an area."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/79F60BF40AB3F306E7367CF3479A4163F76F3944/2261527.png",
+"duration": 3,
+"status": "Shocking Aura",
+"description": "Stun nearby attacking foes with an electric shock (only once per 2 seconds for each attacker).",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/2995072EFD05AC80581CCEEB64BC592B3B6DE724/103353.png",
+"status": "Signet of Air",
+"description": "<c=@abilitytype>Signet Passive:</c> Grants a 25% increase in movement speed.<br><c=@abilitytype>Signet Active:</c> Blind your target and nearby foes."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/79F60BF40AB3F306E7367CF3479A4163F76F3944/2261527.png",
+"duration": 2,
+"status": "Shocking Aura",
+"description": "Stun nearby attacking foes with an electric shock (only once per 2 seconds for each attacker).",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/2995072EFD05AC80581CCEEB64BC592B3B6DE724/103353.png",
+"status": "Signet of Air",
+"description": "<c=@abilitytype>Signet Passive:</c> Grants a 25% increase in movement speed.<br><c=@abilitytype>Signet Active:</c> Blind your target and nearby foes."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png",
+"duration": 3,
+"status": "Magnetic Aura",
+"description": "Reflect projectiles with magnetic energy.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/DC27E04D9F9CE5627D953752B5F334C7A304B7F5/103352.png",
+"status": "Signet of Earth",
+"description": "<c=@abilitytype>Signet Passive:</c> Reduce incoming strike damage.<br><c=@abilitytype>Signet Active:</c> Immobilize and bleed your foe."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/33D27C7FE0017F70749DE84576F56F381DDF0C30/2261524.png",
+"duration": 2,
+"status": "Magnetic Aura",
+"description": "Reflect projectiles with magnetic energy.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/DC27E04D9F9CE5627D953752B5F334C7A304B7F5/103352.png",
+"status": "Signet of Earth",
+"description": "<c=@abilitytype>Signet Passive:</c> Reduce incoming strike damage.<br><c=@abilitytype>Signet Active:</c> Immobilize and bleed your foe."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+"duration": 2,
+"status": "Frost Aura",
+"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/3FA4D3DCA80A06036E7F6C77E84D94466D157766/103321.png",
+"status": "Signet of Restoration",
+"description": "<c=@abilitytype>Signet Passive:</c> Grants health every time you cast a spell. <br><c=@abilitytype>Signet Active:</c> Heal yourself."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/719B80E35C276D68EF0AABB79126CF4CD42E3AF6/2261522.png",
+"duration": 2,
+"status": "Frost Aura",
+"description": "Chill foes that strike you (only once per second for each attacker); incoming damage is reduced by 10%.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/950EABEE51A5B7E116609A2C4869B2BDF3760ED1/103351.png",
+"status": "Signet of Water",
+"description": "<c=@abilitytype>Signet Passive:</c> Reduces incoming condition duration.<br><c=@abilitytype>Signet Active:</c> Damage and chill foes while healing and reviving allies in an area."
+}
+}
+]
+},
+"1674": {
+"id": 1674,
+"name": "Stone Heart",
+"icon": "https://render.guildwars2.com/file/22F1BDACFBEBC8FF2BF77B22B3E535D2BA03D140/1012302.png",
+"description": "You take reduced strike damage for a duration of time after entering or exiting earth attunement.<br><c=@reminder>Remaining effect duration is lost when exiting.</c>",
+"specialization": 26,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/22F1BDACFBEBC8FF2BF77B22B3E535D2BA03D140/1012302.png",
+"duration": 0,
+"status": "Stone Heart",
+"description": "Incoming strike damage is reduced.",
+"apply_count": 1
+},
+{
+"text": "Duration on Entering",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 4
+},
+{
+"text": "Duration on Exiting",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/7B2193ACCF77E56C13E608191B082D68AA0FAA71/156659.png",
+"duration": 2
+}
+]
+},
+"2109": {
+"id": 2109,
+"name": "Weaver",
+"icon": "https://render.guildwars2.com/file/B0707EB06310175FC0CAB50C68C113F4D5B3912E/1769924.png",
+"description": "Your active attunement is now applied to your main hand, with the old attunement moving to your off hand. Attunement recharges are reduced. Gain access to <c=@abilitytype>Dual Attack</c> and the <c=@abilitytype>Stance</c> utility types.",
+"specialization": 56,
+"tier": 1,
+"slot": "Minor",
+"facts": [
+{
+"text": "Recharge Time",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 4
+}
+]
+},
+"2077": {
+"id": 2077,
+"name": "Elemental Refreshment",
+"icon": "https://render.guildwars2.com/file/32D4A99DECA90337DC0722ACF84C38B44A93429C/1769925.png",
+"description": "Gain vitality. Grant barrier to yourself when using Dual Attack skills.",
+"specialization": 56,
+"tier": 2,
+"slot": "Minor",
+"facts": [
+{
+"text": "Barrier",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+"value": 1003,
+"target": "Healing"
+},
+{
+"text": "Barrier",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+"value": 260,
+"target": "Healing"
+},
+{
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/CAE8B4C43FF9D203FA55016700420A0454DFFE02/2229325.png",
+"value": 180,
+"target": "Vitality"
+}
+]
+},
+"2081": {
+"id": 2081,
+"name": "Elemental Polyphony",
+"icon": "https://render.guildwars2.com/file/28460700BDF3B9D3000B963977B1555F7E999512/1769926.png",
+"description": "Gain attributes based on your current attunement. When dual attuned, gain both benefits.",
+"specialization": 56,
+"tier": 3,
+"slot": "Minor",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/7E6722B76FD7F8AC1B4591B2FF9B277147B13476/102801.png",
+"duration": 0,
+"status": "Fire Attunement",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/517FE8900C72EAADBB54676E324D45D31706C277/102865.png",
+"duration": 0,
+"status": "Water Attunement",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
+"duration": 0,
+"status": "Air Attunement",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+"duration": 0,
+"status": "Earth Attunement",
+"apply_count": 1
+}
+]
+},
+"2177": {
+"id": 2177,
+"name": "Superior Elements",
+"icon": "https://render.guildwars2.com/file/0017B2083219583F0150B537B0B8B54A3A7E3228/1769915.png",
+"description": "<c=@abilitytype>Dual Attack</c> skills weaken enemies. Attacks against weakened foes have increased critical chance.",
+"specialization": 56,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 4
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+"duration": 5,
+"status": "Weakness",
+"description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/6CB0E64AF9AA292E332A38C1770CE577E2CDE0E8/102853.png",
+"duration": 2,
+"status": "Weakness",
+"description": "Endurance regeneration decreased by 50%. 50% of hits are Glancing Blows (50% damage). Stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Critical Chance Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png",
+"percent": 15
+},
+{
+"text": "Critical Chance Increase",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/C2CEA567E0C43C199C782809544721AA12A6DF0A/2229323.png",
+"percent": 20
+}
+]
+},
+"2165": {
+"id": 2165,
+"name": "Elemental Pursuit",
+"icon": "https://render.guildwars2.com/file/194D097708234E783C04C790E2C362290054B9C1/1769916.png",
+"description": "Swiftness on you is improved. Gain swiftness when you disable an enemy. <br><c=@reminder>Disables include stun, daze, knockback, pull, knockdown, sink, float, launch, taunt, and fear.</c>",
+"specialization": 56,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 0.25
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+"duration": 4,
+"status": "Swiftness",
+"description": "Movement speed increased by 33%; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Effectiveness Increased",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/B0CD8077991E4FB1622D2930337ED7F9B54211D5/156665.png",
+"percent": 20
+}
+]
+},
+"2115": {
+"id": 2115,
+"name": "Weaver's Prowess",
+"icon": "https://render.guildwars2.com/file/FCA86506DDAD2C32CF130C4819DFEE3119026C96/1769917.png",
+"description": "Gain resistance when you attune to a single element.",
+"specialization": 56,
+"tier": 1,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/50BAC1B8E10CFAB9E749A5D910D4A9DCF29EBB7C/961398.png",
+"duration": 2,
+"status": "Resistance",
+"description": "Nondamaging conditions currently on you are ineffective; stacks duration.",
+"apply_count": 1
+}
+]
+},
+"2180": {
+"id": 2180,
+"name": "Master's Fortitude",
+"icon": "https://render.guildwars2.com/file/28BEBF776AF9FDBEF0BDF8B715265AE724E40878/1769923.png",
+"description": "Gain barrier when you dodge.",
+"specialization": 56,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Barrier",
+"type": "AttributeAdjust",
+"icon": "https://render.guildwars2.com/file/357922487919E8E84B914EAC13D5796DDDC42D14/1770209.png",
+"value": 894,
+"target": "Healing"
+}
+]
+},
+"2061": {
+"id": 2061,
+"name": "Swift Revenge",
+"icon": "https://render.guildwars2.com/file/7B0B0072429031F44DC41404F9BA0D08A5B2EDE2/1769919.png",
+"description": "<c=@abilitytype>Dual Attacks</c> grant you additional bonuses based on their elements.",
+"specialization": 56,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/2FA9DF9D6BC17839BBEA14723F1C53D645DDB5E1/102852.png",
+"duration": 8,
+"status": "Might",
+"description": "Increased outgoing damage; stacks intensity.",
+"apply_count": 2,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/1C91E9C799469ACC6EAF1ACD4B0AD8ACAB0C69A2/103035.png",
+"status": "Fire Attunement",
+"description": "Cast fire spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/517FE8900C72EAADBB54676E324D45D31706C277/102865.png",
+"duration": 0,
+"description": "Remove one condition.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/737E1B9F7855B9F5D3DE1C990CD42118EF3D1C92/102820.png",
+"status": "Water Attunement",
+"description": "Cast water spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/20CFC14967E67F7A3FD4A4B8722B4CF5B8565E11/102836.png",
+"duration": 4,
+"status": "Swiftness",
+"description": "Movement speed increased by 33%; stacks duration.",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4857F59020DE3B0950B9C91F3D234A1C1932984A/103048.png",
+"status": "Air Attunement",
+"description": "Cast air spells."
+}
+},
+{
+"text": "Apply Buff/Condition",
+"type": "PrefixedBuff",
+"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+"duration": 0,
+"description": "",
+"apply_count": 1,
+"prefix": {
+"text": "Apply Buff/Condition",
+"icon": "https://render.guildwars2.com/file/4B8056D9BD080DC8E74AE6A57B2B383A2D4265C9/102870.png",
+"status": "Earth Attunement",
+"description": "Cast earth spells."
+}
+}
+]
+},
+"2170": {
+"id": 2170,
+"name": "Bolstered Elements",
+"icon": "https://render.guildwars2.com/file/BE23D1F64BA73B9837C87A2059EA531BBE65D52B/1769920.png",
+"description": "Gain protection when activating a <c=@abilitytype>Stance</c>. Activate Lesser Stone Resonance when using an elite skill.",
+"specialization": 56,
+"tier": 2,
+"slot": "Major",
+"facts": [
+{
+"text": "Recharge",
+"type": "Recharge",
+"icon": "https://render.guildwars2.com/file/D767B963D120F077C3B163A05DC05A7317D7DB70/156651.png",
+"value": 30
+},
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/CD77D1FAB7B270223538A8F8ECDA1CFB044D65F4/102834.png",
+"duration": 3,
+"status": "Protection",
+"description": "Incoming strike damage decreased by 33%; stacks duration.",
+"apply_count": 1
+}
+]
+},
+"2131": {
+"id": 2131,
+"name": "Elements of Rage",
+"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
+"description": "Gain a bonus to all damage dealt for a period of time when attuned to a single element. Gain access to Unravel.",
+"specialization": 56,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/4269910A34FB0FB861DAE2A13229D594523B0BA0/1769921.png",
+"duration": 8,
+"status": "Elements of Rage",
+"description": "Your damage is increased.",
+"apply_count": 1
+}
+]
+},
+"2090": {
+"id": 2090,
+"name": "Woven Stride",
+"icon": "https://render.guildwars2.com/file/66CB08AA2823930D5B47AF3259B60A7DD86FAFE4/1769922.png",
+"description": "Gain regeneration and cleanse a condition when you grant yourself either swiftness or superspeed.",
+"specialization": 56,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Apply Buff/Condition",
+"type": "Buff",
+"icon": "https://render.guildwars2.com/file/F69996772B9E18FD18AD0AABAB25D7E3FC42F261/102835.png",
+"duration": 3,
+"status": "Regeneration",
+"description": "Gain health every second; stacks duration.",
+"apply_count": 1
+},
+{
+"text": "Conditions Removed",
+"type": "Number",
+"icon": "https://render.guildwars2.com/file/9352ED3244417304995F26CB01AE76BB7E547052/156661.png",
+"value": 1
+}
+]
+},
+"2138": {
+"id": 2138,
+"name": "Flow State",
+"icon": "https://render.guildwars2.com/file/78DA4AC17D4EBDA04BBBD325A024C346F59ED150/1769918.png",
+"description": "Your attunements and <c=@abilitytype>Dual Attack</c> skills gain reduced recharge. <br><c=@reminder>This attunement recharge reduction will not take effect while Weave Self is active.</c>",
+"specialization": 56,
+"tier": 3,
+"slot": "Major",
+"facts": [
+{
+"text": "Dual Skill Recharge Reduced",
+"type": "Percent",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"percent": 20
+},
+{
+"text": "Attunement Recharge Reduced",
+"type": "Time",
+"icon": "https://render.guildwars2.com/file/AAB7C5387A08367C2F023F19FEE70E1556AD4375/1770202.png",
+"duration": 1
+}
+]
+}
+}

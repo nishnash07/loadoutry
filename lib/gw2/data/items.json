@@ -1,0 +1,495 @@
+{
+"75770": {
+"id": 75770,
+"name": "Yassith's Masque",
+"icon": "https://render.guildwars2.com/file/AD7849A39265D6AA1C712ACD476E912E1EC30839/699210.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Helm",
+"weight_class": "Light",
+"defense": 77,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 179.256,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 54
+},
+{
+"attribute": "Precision",
+"modifier": 30
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 54
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 30
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"74357": {
+"id": 74357,
+"name": "Yassith's Visage",
+"icon": "https://render.guildwars2.com/file/0EBB9F33579CC54CC39F685868FFD79D7A0FEEDC/699204.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Helm",
+"weight_class": "Medium",
+"defense": 102,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 179.256,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 54
+},
+{
+"attribute": "Precision",
+"modifier": 30
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 54
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 30
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"73225": {
+"id": 73225,
+"name": "Yassith's Epaulets",
+"icon": "https://render.guildwars2.com/file/0C4E1FEED2C75BC8F6F1D3D11C18303EEF573EED/699208.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Shoulders",
+"weight_class": "Light",
+"defense": 77,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 134.442,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 40
+},
+{
+"attribute": "Precision",
+"modifier": 22
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 40
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 22
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"71436": {
+"id": 71436,
+"name": "Yassith's Doublet",
+"icon": "https://render.guildwars2.com/file/6E0C12721BAA5E343813DE9F2C7EFE064AECCE0A/699212.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Coat",
+"weight_class": "Light",
+"defense": 330,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 403.326,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 121
+},
+{
+"attribute": "Precision",
+"modifier": 67
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 121
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 67
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"73852": {
+"id": 73852,
+"name": "Yassith's Wristguards",
+"icon": "https://render.guildwars2.com/file/5859B5CF97C0D394CF5CB5B3042775C6E6C1A1EB/699211.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Gloves",
+"weight_class": "Light",
+"defense": 140,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 134.442,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 40
+},
+{
+"attribute": "Precision",
+"modifier": 22
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 40
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 22
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"75378": {
+"id": 75378,
+"name": "Yassith's Breeches",
+"icon": "https://render.guildwars2.com/file/58F7090A0E429EA35DF1C9F36DBD281552CA12F9/699209.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Leggings",
+"weight_class": "Light",
+"defense": 203,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 268.884,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 81
+},
+{
+"attribute": "Precision",
+"modifier": 44
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 81
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 44
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"74264": {
+"id": 74264,
+"name": "Yassith's Footwear",
+"icon": "https://render.guildwars2.com/file/5C63AF3E5541CBBF54C8656DD8F5E274590BEA52/699213.png",
+"type": "Armor",
+"rarity": "Ascended",
+"details": {
+"type": "Boots",
+"weight_class": "Light",
+"defense": 140,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 134.442,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 40
+},
+{
+"attribute": "Precision",
+"modifier": 22
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 40
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 22
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"77122": {
+"id": 77122,
+"name": "Yassith's Reaver",
+"icon": "https://render.guildwars2.com/file/A619984ED5E67B5FC9C2310776AF071B1A4C3CB8/631923.png",
+"type": "Weapon",
+"rarity": "Ascended",
+"details": {
+"type": "Axe",
+"damage_type": "Physical",
+"min_power": 900,
+"max_power": 1100,
+"defense": 0,
+"infusion_slots": [
+{
+"flags": [
+"Infusion"
+]
+}
+],
+"attribute_adjustment": 358.512,
+"infix_upgrade": {
+"id": 1153,
+"attributes": [
+{
+"attribute": "Power",
+"modifier": 108
+},
+{
+"attribute": "Precision",
+"modifier": 59
+},
+{
+"attribute": "ConditionDamage",
+"modifier": 108
+},
+{
+"attribute": "ConditionDuration",
+"modifier": 59
+}
+]
+},
+"secondary_suffix_item_id": ""
+}
+},
+"91876": {
+"id": 91876,
+"name": "Salsa-Topped Veggie Flatbread",
+"icon": "https://render.guildwars2.com/file/161BD739DCBE0BA737081A079017D6F660BE5642/2191029.png",
+"type": "Consumable",
+"rarity": "Ascended",
+"details": {
+"type": "Food"
+}
+},
+"43449": {
+"id": 43449,
+"name": "Potent Master Tuning Crystal",
+"icon": "https://render.guildwars2.com/file/071410D26DC8480BA014C84A05EC7BE4DA0FDA5A/219373.png",
+"type": "Consumable",
+"rarity": "Fine",
+"details": {
+"type": "Utility",
+"duration_ms": 3600000,
+"apply_count": 1,
+"name": "Enhancement",
+"icon": "https://render.guildwars2.com/file/64976F59BF060718C9109D36C27AD0F40F06BB32/436368.png",
+"description": "Gain Condition Damage Equal to 3% of Your Precision\nGain Condition Damage Equal to 8% of Your Expertise\n+10% Experience from Kills"
+}
+},
+"44944": {
+"id": 44944,
+"name": "Superior Sigil of Bursting",
+"icon": "https://render.guildwars2.com/file/7ABFCEDF80329157F734FD56B293765D9B940FAD/619703.png",
+"type": "UpgradeComponent",
+"rarity": "Exotic",
+"details": {
+"type": "Sigil",
+"flags": [
+"ShortBow",
+"Dagger",
+"Focus",
+"Greatsword",
+"Hammer",
+"Harpoon",
+"Mace",
+"Pistol",
+"Rifle",
+"Scepter",
+"Shield",
+"Speargun",
+"Axe",
+"Staff",
+"Sword",
+"Torch",
+"Trident",
+"Warhorn",
+"LongBow"
+],
+"infusion_upgrade_flags": [],
+"attribute_adjustment": 0,
+"infix_upgrade": {
+"id": 750,
+"buff": {
+"skill_id": 20474,
+"description": "+5% Condition Damage"
+},
+"attributes": []
+},
+"suffix": "of Bursting"
+}
+},
+"44950": {
+"id": 44950,
+"name": "Superior Sigil of Malice",
+"icon": "https://render.guildwars2.com/file/797D052CB4EA63A61A3225962128D197ACB3ED17/619709.png",
+"type": "UpgradeComponent",
+"rarity": "Exotic",
+"details": {
+"type": "Sigil",
+"flags": [
+"ShortBow",
+"Dagger",
+"Focus",
+"Greatsword",
+"Hammer",
+"Harpoon",
+"Mace",
+"Pistol",
+"Rifle",
+"Scepter",
+"Shield",
+"Speargun",
+"Axe",
+"Staff",
+"Sword",
+"Torch",
+"Trident",
+"Warhorn",
+"LongBow"
+],
+"infusion_upgrade_flags": [],
+"attribute_adjustment": 0,
+"infix_upgrade": {
+"id": 751,
+"buff": {
+"skill_id": 20468,
+"description": "+10% condition duration."
+},
+"attributes": []
+},
+"suffix": "of Malice"
+}
+},
+"67339": {
+"id": 67339,
+"name": "Superior Rune of the Trapper",
+"icon": "https://render.guildwars2.com/file/4A322301EDD61898193B9B94A0A6A1F1DC06BF24/866844.png",
+"type": "UpgradeComponent",
+"rarity": "Exotic",
+"details": {
+"type": "Rune",
+"flags": [
+"HeavyArmor",
+"LightArmor",
+"MediumArmor"
+],
+"infusion_upgrade_flags": [],
+"bonuses": [
+"+25 Condition Damage",
+"+5% Condition Duration",
+"+50 Condition Damage",
+"+10% Condition Duration",
+"+100 Condition Damage",
+"+125 Condition Damage"
+],
+"attribute_adjustment": 0,
+"infix_upgrade": {
+"id": 112,
+"attributes": []
+},
+"suffix": "of the Trapper"
+}
+},
+"100153": {
+"id": 100153,
+"name": "Relic of the Fractal",
+"icon": "https://render.guildwars2.com/file/B2D409644147BF18935A95A52505ABCB9EECE142/3122351.png",
+"type": "Relic",
+"rarity": "Exotic",
+"details": null
+},
+"96613": {
+"id": 96613,
+"name": "Jade Bot Core: Tier 10",
+"icon": "https://render.guildwars2.com/file/E4F0CDDEAA0C0BCFF158A5A3042AD3C4A3021A22/2595067.png",
+"type": "PowerCore",
+"rarity": "Exotic",
+"details": null
+}
+}

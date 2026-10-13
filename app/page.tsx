@@ -27,11 +27,15 @@ export default function Home() {
               <span className="mt-5 inline-block text-[15px] font-medium text-white group-hover:underline">Open ›</span>
             </div>
           </Link>
-          <div className="card p-8 flex flex-col justify-end min-h-[320px]">
-            <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-ink-2">Next</p>
-            <h2 className="mt-2 text-2xl font-semibold">More games</h2>
-            <p className="mt-2 text-ink-2">Each game gets the same treatment: its own layout, its own icons, the same rigor.</p>
-          </div>
+          <Link href="/guild-wars-2/" className="card group relative overflow-hidden p-8 min-h-[320px] flex flex-col justify-end bg-[#1a1410] text-white">
+            <div className="absolute inset-0 bg-[radial-gradient(120%_80%_at_20%_0%,rgba(184,134,43,.45),transparent_60%)]" />
+            <div className="relative">
+              <p className="text-[13px] font-semibold uppercase tracking-[0.12em] text-white/60">Now live</p>
+              <h2 className="mt-2 text-2xl font-semibold">Guild Wars 2</h2>
+              <p className="mt-2 text-white/70">Raid builds from the API&apos;s own coefficients, with rotations explained press by press.</p>
+              <span className="mt-5 inline-block text-[15px] font-medium text-white group-hover:underline">Open ›</span>
+            </div>
+          </Link>
         </div>
 
         <div className="mt-16 grid gap-10 md:grid-cols-3">

@@ -1,0 +1,71 @@
+{
+"31": {
+"id": 31,
+"name": "Fire",
+"elite": false,
+"icon": "https://render.guildwars2.com/file/B4BDAB2452DEF1A34615DDC4F30A157DADC743C5/1011986.png",
+"background": "https://render.guildwars2.com/file/6BB3E8FDEA6E679050D59E411A4AA956D347B045/1012038.png",
+"minor_traits": [
+320,
+318,
+319
+],
+"major_traits": [
+296,
+328,
+335,
+325,
+340,
+334,
+1510,
+294,
+1675
+]
+},
+"26": {
+"id": 26,
+"name": "Earth",
+"elite": false,
+"icon": "https://render.guildwars2.com/file/BA6BC962A7ABA1330B3AC4141299397C0036559F/1011985.png",
+"background": "https://render.guildwars2.com/file/B9C5BE9716010E3F7F170A52B5B272327CDA49A1/1012037.png",
+"minor_traits": [
+278,
+279,
+280
+],
+"major_traits": [
+282,
+1507,
+289,
+275,
+281,
+277,
+1508,
+287,
+1674
+]
+},
+"56": {
+"id": 56,
+"name": "Weaver",
+"elite": true,
+"icon": "https://render.guildwars2.com/file/02FAA82BF2F5BF3E3AD89BCF05FF56B4C86139F4/1769888.png",
+"background": "https://render.guildwars2.com/file/C3D501E451AD49310F05B40924B20A3B7CB14E07/1769897.png",
+"minor_traits": [
+2109,
+2077,
+2081
+],
+"major_traits": [
+2177,
+2165,
+2115,
+2180,
+2061,
+2170,
+2131,
+2090,
+2138
+]
+}
+}
