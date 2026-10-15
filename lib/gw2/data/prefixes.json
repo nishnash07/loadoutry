@@ -1,0 +1,668 @@
+{
+"Viper's": {
+"armor": {
+"id": 1153,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1130,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 12
+}
+]
+}
+},
+"Sinister": {
+"armor": {
+"id": 1067,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1064,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 32
+}
+]
+}
+},
+"Grieving": {
+"armor": {
+"id": 1344,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "ferocity",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1329,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "ferocity",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+}
+]
+}
+},
+"Rampager's": {
+"armor": {
+"id": 1078,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.35,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.25,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 658,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "precision",
+"multiplier": 0.35,
+"value": 32
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.25,
+"value": 18
+}
+]
+}
+},
+"Carrion": {
+"armor": {
+"id": 1075,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "vitality",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1038,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "vitality",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 32
+}
+]
+}
+},
+"Celestial": {
+"armor": {
+"id": 559,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "toughness",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "vitality",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "ferocity",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 588,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "precision",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "toughness",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "vitality",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "ferocity",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 13
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 13
+}
+]
+}
+},
+"Trailblazer's": {
+"armor": {
+"id": 1085,
+"attrs": [
+{
+"attr": "toughness",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "vitality",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1115,
+"attrs": [
+{
+"attr": "toughness",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "vitality",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 12
+}
+]
+}
+},
+"Dire": {
+"armor": {
+"id": 1073,
+"attrs": [
+{
+"attr": "toughness",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "vitality",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1114,
+"attrs": [
+{
+"attr": "toughness",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "vitality",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 32
+}
+]
+}
+},
+"Ritualist's": {
+"armor": {
+"id": 1686,
+"attrs": [
+{
+"attr": "vitality",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1694,
+"attrs": [
+{
+"attr": "vitality",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "expertise",
+"multiplier": 0.165,
+"value": 12
+}
+]
+}
+},
+"Rabid": {
+"armor": {
+"id": 154,
+"attrs": [
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "toughness",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 585,
+"attrs": [
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "toughness",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.35,
+"value": 32
+}
+]
+}
+},
+"Seraph": {
+"armor": {
+"id": 1222,
+"attrs": [
+{
+"attr": "precision",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1220,
+"attrs": [
+{
+"attr": "precision",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 12
+}
+]
+}
+},
+"Berserker's": {
+"armor": {
+"id": 1077,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.35,
+"value": 0
+},
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 0
+},
+{
+"attr": "ferocity",
+"multiplier": 0.25,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 584,
+"attrs": [
+{
+"attr": "power",
+"multiplier": 0.35,
+"value": 32
+},
+{
+"attr": "precision",
+"multiplier": 0.25,
+"value": 18
+},
+{
+"attr": "ferocity",
+"multiplier": 0.25,
+"value": 18
+}
+]
+}
+},
+"Plaguedoctor's": {
+"armor": {
+"id": 1484,
+"attrs": [
+{
+"attr": "vitality",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 0
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 0
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 0
+}
+]
+},
+"trinket": {
+"id": 1486,
+"attrs": [
+{
+"attr": "vitality",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "healingPower",
+"multiplier": 0.165,
+"value": 12
+},
+{
+"attr": "conditionDamage",
+"multiplier": 0.3,
+"value": 25
+},
+{
+"attr": "concentration",
+"multiplier": 0.165,
+"value": 12
+}
+]
+}
+}
+}

@@ -8,6 +8,7 @@ import { TraitPanel } from "@/components/gw2/TraitPanel";
 import { SkillBar } from "@/components/gw2/SkillBar";
 import { Rotation } from "@/components/gw2/Rotation";
 import { DamageTable } from "@/components/gw2/DamageTable";
+import { SimReport } from "@/components/gw2/SimReport";
 
 export function generateStaticParams() { return GW2_BUILDS.map((b) => ({ slug: b.slug })); }
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
@@ -65,6 +66,8 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
         <p className="mt-3 max-w-3xl text-ink-2 leading-relaxed">Expected damage of one cast against the heavy raid golem (armor 2597) with 25 might and fury: strike = weapon strength × power × coefficient ÷ armor, crits at {c.critDamage.toFixed(0)}% with {c.boonCritChance.toFixed(1)}% chance; conditions = stacks × duration × tick, with {c.conditionDuration.toFixed(2)}% duration plus any per-condition bonus. {b.damageNote}</p>
         <div className="mt-6"><DamageTable c={c} /></div>
       </section>
+
+      <SimReport slug={b.slug} />
 
       {b.log && (
         <section className="mt-16">

@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sim": "tsc -p tsconfig.sim.json && node .sim/lib/gw2/sim/run.js"
   },
   "dependencies": {
     "react": "19.1.0",
